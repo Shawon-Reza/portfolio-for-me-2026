@@ -5,6 +5,7 @@ import RecentWork from '@/components/featurewise/RecentWork'
 import ProjectsCertificatesPage from '@/components/featurewise/projectsCertificatesSection/ProjectsCertificatesPage'
 import SkillMarquee from '@/components/featurewise/SkillMarquee'
 import Services from '@/components/featurewise/Services'
+import Reviews from '@/components/featurewise/client-review/Reviews'
 
 const page = () => {
   return (
@@ -17,6 +18,8 @@ const page = () => {
       <AboutMe />
       <RecentWork />
       <Services />
+      <Reviews/>
+      
     </div>
   )
 }

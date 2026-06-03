@@ -1,5 +1,6 @@
 import React from "react"
 import { ArrowRight, Lightbulb, ListChecks, Rocket } from "lucide-react"
+import ServicesMarquee from "./ServicesMarquee"
 
 type ProcessStep = {
   id: string
@@ -128,6 +129,7 @@ export default function Services({
           </div>
         </div>
       </div>
+      <ServicesMarquee />
     </section>
   )
 }

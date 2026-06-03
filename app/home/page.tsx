@@ -6,6 +6,7 @@ import ProjectsCertificatesPage from '@/components/featurewise/projectsCertifica
 import SkillMarquee from '@/components/featurewise/SkillMarquee'
 import Services from '@/components/featurewise/Services'
 import Reviews from '@/components/featurewise/client-review/Reviews'
+import FAQ from '@/components/featurewise/faq/FAQ'
 
 const page = () => {
   return (
@@ -18,8 +19,9 @@ const page = () => {
       <AboutMe />
       <RecentWork />
       <Services />
-      <Reviews/>
-      
+      <Reviews />
+      <FAQ />
+
     </div>
   )
 }

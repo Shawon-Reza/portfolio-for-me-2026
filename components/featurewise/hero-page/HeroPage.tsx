@@ -3,7 +3,7 @@ import { ArrowRight, MousePointer2, Sparkles } from "lucide-react"
 
 export default function HeroPage() {
     return (
-        <section className="relative isolate overflow-hidden bg-black text-white">
+        <section className="relative isolate overflow-hidden  text-white">
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute left-[-8%] top-[-10%] h-72 w-72 rounded-full bg-white/10 blur-3xl sm:h-96 sm:w-96" />
                 <div className="absolute right-[-10%] top-[18%] h-96 w-96 rounded-full bg-white/12 blur-3xl sm:h-[32rem] sm:w-[32rem]" />

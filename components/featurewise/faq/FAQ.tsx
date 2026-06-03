@@ -118,7 +118,7 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
           <div className="flex flex-col">
             <div className={cn("inline-flex w-fit items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs", colors.badge)}>
               <CircleHelp className="size-3.5" />
-              FAQ's
+              FAQs
             </div>
 
             <h2 className="mt-5 text-4xl font-light tracking-tight text-white sm:text-5xl lg:text-6xl">

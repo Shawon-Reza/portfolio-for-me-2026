@@ -7,6 +7,7 @@ import SkillMarquee from '@/components/featurewise/SkillMarquee'
 import Services from '@/components/featurewise/Services'
 import Reviews from '@/components/featurewise/client-review/Reviews'
 import FAQ from '@/components/featurewise/faq/FAQ'
+import Footer from '@/components/featurewise/Footer'
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
       <Services />
       <Reviews />
       <FAQ />
+      <Footer />
 
     </div>
   )

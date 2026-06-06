@@ -1,5 +1,9 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight, MousePointer2, Sparkles } from "lucide-react"
+import Lottie from "lottie-react"
+import mouse from "@/assets/lottie/mouse.json"
 
 export default function HeroPage() {
     return (
@@ -46,12 +50,18 @@ export default function HeroPage() {
                     </div>
                 </div>
 
+                {/*  ========================== Mouse Horizontal Line========================= */}
                 <div className="mt-16 flex w-full max-w-4xl items-center gap-3 px-2 text-xs text-white/55 sm:mt-20 sm:px-0 sm:text-sm md:text-base">
                     <span className="whitespace-nowrap">Scroll down</span>
                     <span className="h-px flex-1 bg-white/15" />
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 shadow-[0_0_24px_rgba(255,255,255,0.14)] backdrop-blur-md">
-                        <MousePointer2 className="h-4 w-4" />
-                    </span>
+                    
+                        {/* <MousePointer2 className="h-4 w-4" /> */}
+                        <Lottie
+                        className="h-10 w-10"
+                            animationData={mouse}
+                            loop={true}
+                        />
+                    
                     <span className="h-px flex-1 bg-white/15" />
                     <span className="whitespace-nowrap">to see projects</span>
                 </div>

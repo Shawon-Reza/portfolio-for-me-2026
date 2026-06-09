@@ -5,8 +5,8 @@ const socialLinks = ["Behance", "X", "Dribbble"]
 
 export default function Footer() {
   return (
-    <footer className="relative mt-10 overflow-hidden bg-black px-4 pb-6 pt-10 sm:px-6 lg:px-8">
-      <div className="mx-auto w-full max-w-7xl overflow-hidden rounded-[2rem] border border-white/6 bg-black px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+    <footer className="relative mt-10 overflow-hidden  px-4 pb-6 pt-10 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-7xl overflow-hidden rounded-[2rem] border border-white/6 bg-blac px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
         <div className="pointer-events-none absolute inset-0 opacity-70">
           <div className="absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.08),_transparent_65%)] blur-2xl" />
           <div className="absolute left-1/2 top-16 h-56 w-[48rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.18)_0,_rgba(255,255,255,0.08)_25%,_transparent_70%)] blur-3xl" />
@@ -45,7 +45,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="grid gap-6 border-t border-white/8 pt-6 text-sm text-white/80 md:grid-cols-3 md:items-center md:text-base">
+          <div className="grid gap-6 border-t border-white/8 pt-6 text-sm text-white/80 md:grid-cols-3 md:items-center md:text-base bg-none">
             <a href="mailto:hello@framebase.design" className="text-left font-medium text-white transition hover:text-white/80">
               hello@framebase.design
             </a>

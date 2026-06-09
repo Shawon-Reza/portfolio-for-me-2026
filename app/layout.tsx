@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body suppressHydrationWarning className="min-h-full flex flex-col">{children}</body>
+      <body suppressHydrationWarning className="min-h-full flex flex-col">
+        {/* {children} */}
+        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+      </body>
     </html>
   );
 }

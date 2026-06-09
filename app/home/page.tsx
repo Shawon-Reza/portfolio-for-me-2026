@@ -13,9 +13,18 @@ import DarkVeil from '@/components/ui/DarkVeil'
 const page = () => {
   return (
     <div className="min-h-screen bg-black text-white">
-      <Navbar />
-      <section className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
+      <section
+        className="fixed inset-0 h-screen w-full saturate-150 contrast-125 z-90 mix-blend-screen   "
+      >
+        <Navbar />
+      </section>
+
+
+      {/* ============== Hero Page ========= */}
+      <section
+        id="hero"
+        className="relative overflow-hidden">
+        {/* <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
           <DarkVeil
             hueShift={185}
             noiseIntensity={0.02}
@@ -24,21 +33,65 @@ const page = () => {
             scanlineFrequency={7}
             warpAmount={0.16}
           />
-        </div>
+        </div> */}
 
         <div className="relative z-10">
           <HeroPage />
           <SkillMarquee />
         </div>
       </section>
+      <section
+        id="projects"
+      >
+        <ProjectsCertificatesPage />
 
-      <ProjectsCertificatesPage />
-      <AboutMe />
-      <RecentWork />
-      <Services />
-      <Reviews />
-      <FAQ />
-      <Footer />
+      </section>
+      <section
+        id="about"
+      >
+        <AboutMe />
+      </section>
+      <section
+        id="work"
+      >
+        <RecentWork />
+      </section>
+      <section
+        id="services"
+      >
+        <Services />
+      </section>
+      <section
+        id="testimonials"
+      >
+        <Reviews />
+      </section>
+      <section
+        id="contact"
+      >
+        <FAQ />
+      </section>
+
+
+
+
+
+      <section
+        id="contact"
+        className="relative overflow-hidden">
+        {/* <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
+          <DarkVeil
+            hueShift={185}
+            noiseIntensity={0.02}
+            scanlineIntensity={0.00}
+            speed={0.5}
+            scanlineFrequency={7}
+            warpAmount={0.16}
+          />
+        </div> */}
+        <Footer />
+      </section>
+
 
     </div>
   )

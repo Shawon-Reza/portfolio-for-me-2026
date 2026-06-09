@@ -11,7 +11,7 @@ const NAV_ITEMS = [
     { label: "Contact", href: "#contact" },
 ]
 
-export default function Navbar() {
+export default function Navbar() {  
     const [open, setOpen] = useState(false)
 
     return (

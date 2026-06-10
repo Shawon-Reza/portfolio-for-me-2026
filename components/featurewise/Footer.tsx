@@ -1,5 +1,11 @@
 import React from "react"
 import { ArrowUpRight, CircleDot } from "lucide-react"
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
+import { FaHackerrank } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 const socialLinks = ["Behance", "X", "Dribbble"]
 
@@ -20,7 +26,9 @@ export default function Footer() {
 
           <div className="mx-auto max-w-4xl">
             <h2 className="text-3xl font-light tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-              Curious about what we can create together? Let&apos;s bring something extraordinary to life!
+              Curious about what we can build together?
+              <br />
+              Lets create intelligent AI solutions!
             </h2>
 
             <div className="mt-8 flex justify-center">
@@ -35,27 +43,66 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-3 text-white/80">
-            {socialLinks.map((social) => (
-              <span
-                key={social}
-                className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/[0.04] px-3 py-2 text-sm"
-              >
-                {social}
-              </span>
-            ))}
+            <Link
+              href="https://github.com/jannatul-fredaues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <FaGithubSquare size={28} />
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/jannatul-ferdaues/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <BsLinkedin size={28} />
+            </Link>
+
+            <Link
+              href="https://codeforces.com/profile/jannatul_fredaues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <SiCodeforces size={28} />
+            </Link>
+
+            <Link
+              href="https://www.hackerrank.com/jannatul_fredaues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <FaHackerrank size={28} />
+            </Link>
+
+            <Link
+              href="mailto: jannatul.ferdaues.soha@gmail.com"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <MdEmail size={28} />
+            </Link>
+
           </div>
+
+
+
+
 
           <div className="grid gap-6 border-t border-white/8 pt-6 text-sm text-white/80 md:grid-cols-3 md:items-center md:text-base bg-none">
             <a href="mailto:hello@framebase.design" className="text-left font-medium text-white transition hover:text-white/80">
-              hello@framebase.design
+              jannatul.ferdaues.soha@gmail.com
             </a>
 
             <div className="text-center text-white/70">
-              Design In <span className="underline underline-offset-4">Framer</span>
+              Dhaka, Bangladesh 
             </div>
 
             <div className="text-left md:text-right text-white/70">
-              All rights reserved.
+              2026 Jannatul Ferdaues. All Rights Reserved.
             </div>
           </div>
         </div>

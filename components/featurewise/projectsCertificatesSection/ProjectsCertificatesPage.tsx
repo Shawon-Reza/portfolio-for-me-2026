@@ -31,26 +31,29 @@ function Card({ id }: { id: number }) {
 
 export default function ProjectsCertificatesPage() {
     return (
-        <section className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        // mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8
+        <section className=" py-12 ">
             <div className="mx-auto max-w-6xl text-center mb-8">
                 <h2 className="text-2xl font-semibold text-white">Selected Projects</h2>
                 <p className="mt-2 text-sm text-white/60">Case studies and packaging work</p>
             </div>
 
-            <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
-                <div className="flex w-full flex-col gap-6 lg:w-1/3">
+
+            <div className="flex flex-col gap-2 lg:flex-row lg:items-start">
+
+                <div className="flex w-full flex-col gap-2 lg:w-1/3 mt-[15%] xl:mt-[12.5%]">
                     {leftIds.map((id) => (
                         <Card id={id} key={`l-${id}`} />
                     ))}
                 </div>
 
-                <div className="flex w-full flex-col gap-6 lg:w-1/3">
+                <div className="flex w-full flex-col gap-2 lg:w-1/3">
                     {centerIds.map((id) => (
                         <Card id={id} key={`c-${id}`} />
                     ))}
                 </div>
 
-                <div className="flex w-full flex-col gap-6 lg:w-1/3">
+                <div className="flex w-full flex-col gap-2 lg:w-1/3 mt-[15%] xl:mt-[12.5%]">
                     {rightIds.map((id) => (
                         <Card id={id} key={`r-${id}`} />
                     ))}

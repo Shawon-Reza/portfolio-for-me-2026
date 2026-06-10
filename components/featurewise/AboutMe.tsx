@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React from "react"
 
 type TimelineItem = {
@@ -17,27 +18,27 @@ type AboutMeProps = {
 }
 
 const defaultTimeline: TimelineItem[] = [
-  { 
-    role: "AI Engineer & Researcher", 
-    company: "Personal Projects & Research", 
-    date: "2025 – Present" 
+  {
+    role: "AI Engineer & Researcher",
+    company: "Personal Projects & Research",
+    date: "2025 – Present"
   },
-  { 
-    role: "Final Year CS Student", 
-    company: "Daffodil International University", 
-    date: "2023 – 2027" 
+  {
+    role: "Final Year CS Student",
+    company: "Daffodil International University",
+    date: "2023 – 2027"
   },
-  { 
-    role: "AI/ML Project Developer", 
-    company: "Multiple Open Source Projects", 
-    date: "2025 – Present" 
+  {
+    role: "AI/ML Project Developer",
+    company: "Multiple Open Source Projects",
+    date: "2025 – Present"
   },
 ]
 
 export default function AboutMe({
   title = "Meet Jannatul",
-  description = 
-    "I'm Jannatul Ferdaues, a passionate final-year Computer Science student and AI Engineer based in Dhaka, Bangladesh. I specialize in building practical AI solutions in Computer Vision and NLP that deliver real, measurable results — 95% classification accuracy, 87% candidate matching precision, and 98% error detection.",
+  description =
+  "I'm Jannatul Ferdaues, a passionate final-year Computer Science student and AI Engineer based in Dhaka, Bangladesh. I specialize in building practical AI solutions in Computer Vision and NLP that deliver real, measurable results — 95% classification accuracy, 87% candidate matching precision, and 98% error detection.",
   tags = [
     "Deep Learning",
     "Computer Vision",
@@ -54,13 +55,13 @@ export default function AboutMe({
 }: AboutMeProps) {
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-8 lg:px-12">
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
         <div>
           <h1 className="text-4xl font-light leading-tight text-white sm:text-5xl md:text-6xl">{title}</h1>
           <p className="mt-6 max-w-xl text-sm text-white/70">{description}</p>
-          
+
           <hr className="my-8 border-t border-white/6" />
-          
+
           <div className="flex flex-wrap gap-3">
             {tags.map((t) => (
               <span
@@ -73,7 +74,7 @@ export default function AboutMe({
           </div>
 
           <hr className="my-8 border-t border-white/6" />
-          
+
           <div className="space-y-8 text-sm text-white/80">
             {timeline.map((row, idx) => (
               <div
@@ -87,13 +88,15 @@ export default function AboutMe({
             ))}
           </div>
         </div>
-
+        {/* ========================================================= */}
         <div className="order-first lg:order-last">
-          <div className="relative w-full overflow-hidden rounded-md border border-white/6 bg-white/2 lg:ml-6">
-            <img
+          <div className="relative w-full overflow-hidden rounded-md border border-white/6 bg-white/2 lg:ml-6 flex items-center justify-center">
+            <Image
               src={imageSrc}
               alt={imageAlt}
-              className="h-64 w-full object-cover sm:h-72 md:h-80 lg:h-full lg:max-h-[520px]"
+              width={800}
+              height={600}
+              className="h-full w-full object-cover sm:h-72 md:h-80 lg:h-full lg:max-h-[520px] "
               loading="lazy"
             />
             <div className="absolute left-4 top-4 rounded-full bg-black/50 px-4 py-2 text-sm font-medium text-white backdrop-blur">

@@ -15,16 +15,19 @@ export default function Navbar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <header className="w-full bg-gradient-to-r from-neutral-900 via-black to-neutral-900 text-[#9E9E9E]">
+        <header className="text-[#9E9E9E] fixed top-0 left-0 w-full z-90 bg-black/5
+         backdrop-blur-lg border-b border-white/10 ">
+           
             <div className=" mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-4">
-                        <Link href="/" className="flex items-center gap-3">
+                        <a href="#hero" className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                                 <Sparkles className="w-5 h-5 text-white" aria-hidden />
                             </div>
-                            <span className="text-lg font-semibold tracking-tight">Portfolite</span>
-                        </Link>
+                            <span
+                            className="text-lg font-semibold tracking-tight">Soha Rahman</span>
+                        </a>
                     </div>
 
 

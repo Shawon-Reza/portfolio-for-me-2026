@@ -9,12 +9,13 @@ import Reviews from '@/components/featurewise/client-review/Reviews'
 import FAQ from '@/components/featurewise/faq/FAQ'
 import Footer from '@/components/featurewise/Footer'
 import DarkVeil from '@/components/ui/DarkVeil'
+import RevealAnimation from '@/components/RevealAnimation'
 
 const page = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <section
-        className="fixed inset-0 h-screen w-full saturate-150 contrast-125 z-90 mix-blend-screen   "
+        className="   "
       >
         <Navbar />
       </section>
@@ -40,32 +41,53 @@ const page = () => {
           <SkillMarquee />
         </div>
       </section>
+
+
+
       <section
         id="projects"
       >
         <ProjectsCertificatesPage />
 
       </section>
-      <section
-        id="about"
-      >
-        <AboutMe />
-      </section>
+
+
+
+      <RevealAnimation>
+        <section
+          id="about"
+        >
+          <AboutMe />
+        </section>
+      </RevealAnimation>
+
+
+
+
       <section
         id="work"
       >
         <RecentWork />
       </section>
+
+
+
       <section
         id="services"
       >
         <Services />
       </section>
+
+
+
       <section
         id="testimonials"
       >
         <Reviews />
       </section>
+
+
+
       <section
         id="contact"
       >

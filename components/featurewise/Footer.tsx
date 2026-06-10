@@ -89,9 +89,6 @@ export default function Footer() {
           </div>
 
 
-
-
-
           <div className="grid gap-6 border-t border-white/8 pt-6 text-sm text-white/80 md:grid-cols-3 md:items-center md:text-base bg-none">
             <a href="mailto:hello@framebase.design" className="text-left font-medium text-white transition hover:text-white/80">
               jannatul.ferdaues.soha@gmail.com

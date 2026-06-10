@@ -24,7 +24,7 @@ const page = () => {
       {/* ============== Hero Page ========= */}
       <section
         id="hero"
-        className="relative overflow-hidden">
+        className="relative overflow-hidden mt-16">
         {/* <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
           <DarkVeil
             hueShift={185}

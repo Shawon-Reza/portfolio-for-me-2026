@@ -18,18 +18,18 @@ export default function HeroPage() {
             <div className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col items-center justify-center px-4 py-16 sm:px-6 lg:px-8">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-white/80 shadow-[0_0_30px_rgba(255,255,255,0.08)] backdrop-blur-md sm:text-sm">
                     <span className="h-2 w-2 rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
-                    Crafting Unique Brand Identities
+                    Building AI That Works
                 </div>
 
                 <div className="max-w-5xl text-center">
                     <h1 className="mx-auto max-w-4xl text-5xl font-light tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[5.5rem] lg:leading-[0.95]">
-                        Branding that you need Indeed
+                        AI Solutions that<br />Deliver Real Results
                     </h1>
 
                     <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
-                        Elevate your brand with custom identity and package design.
-                        Showcase your story through bold visuals and strategic design
-                        solutions.
+                        Final-year Computer Science student specializing in Computer Vision, Deep Learning,
+                        and NLP. I build practical AI systems with proven impact — 95% classification accuracy,
+                        87% candidate matching precision, and 98% error detection.
                     </p>
 
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
@@ -54,14 +54,14 @@ export default function HeroPage() {
                 <div className="mt-16 flex w-full max-w-4xl items-center gap-3 px-2 text-xs text-white/55 sm:mt-20 sm:px-0 sm:text-sm md:text-base">
                     <span className="whitespace-nowrap">Scroll down</span>
                     <span className="h-px flex-1 bg-white/15" />
-                    
-                        {/* <MousePointer2 className="h-4 w-4" /> */}
-                        <Lottie
+
+                    {/* <MousePointer2 className="h-4 w-4" /> */}
+                    <Lottie
                         className="h-10 w-10"
-                            animationData={mouse}
-                            loop={true}
-                        />
-                    
+                        animationData={mouse}
+                        loop={true}
+                    />
+
                     <span className="h-px flex-1 bg-white/15" />
                     <span className="whitespace-nowrap">to see projects</span>
                 </div>

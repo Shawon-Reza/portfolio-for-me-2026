@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import CustomCursor from "@/components/CustomCursor";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
   title: "Jannatul Ferdaues - AI Engineer & Researcher",
@@ -20,6 +21,7 @@ export default function RootLayout({
        suppressHydrationWarning 
        
        className="min-h-full flex flex-col">
+         <ScrollProgress />
         {/* {children} */}
         <CustomCursor />
         <SmoothScrollProvider>{children}</SmoothScrollProvider>

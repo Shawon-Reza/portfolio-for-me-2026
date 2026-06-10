@@ -10,10 +10,11 @@ import FAQ from '@/components/featurewise/faq/FAQ'
 import Footer from '@/components/featurewise/Footer'
 import DarkVeil from '@/components/ui/DarkVeil'
 import RevealAnimation from '@/components/RevealAnimation'
+import MagicRings from './../../components/MagicRings';
 
 const page = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black/90 text-white">
       <section
         className="   "
       >
@@ -111,6 +112,39 @@ const page = () => {
             warpAmount={0.16}
           />
         </div> */}
+
+        <div
+          className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen"
+        //  style={{ width: '600px', height: '400px', position: 'relative' }}
+        >
+          <MagicRings
+            color="#8c69ae"
+            colorTwo="#4144d7"
+            ringCount={4}
+            speed={0.5}
+            attenuation={10}
+            lineThickness={2}
+            baseRadius={0.35}
+            radiusStep={0.1}
+            scaleRate={0.1}
+            opacity={1}
+            blur={0}
+            noiseAmount={0.1}
+            rotation={0}
+            ringGap={1.5}
+            fadeIn={0.7}
+            fadeOut={0.5}
+            followMouse={false}
+            mouseInfluence={0.2}
+            hoverScale={1.2}
+            parallax={0.05}
+            clickBurst={false}
+          />
+        </div>
+
+
+
+
         <Footer />
       </section>
 

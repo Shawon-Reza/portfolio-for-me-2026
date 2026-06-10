@@ -1,5 +1,9 @@
 import React from "react"
 import { ArrowRight, Sparkles, Star, Circle } from "lucide-react"
+import {
+  Code, Cpu, Brain, Image, MessageSquare,
+  BarChart3, RefreshCw, Bot, Container, Server
+} from "lucide-react";
 
 import { Marquee } from "@/components/ui/marquee"
 
@@ -9,21 +13,21 @@ type MarqueeItem = {
 }
 
 const topRow: MarqueeItem[] = [
-  { label: "Slide Decks", icon: <Circle className="size-4" /> },
-  { label: "Copywriting", icon: <ArrowRight className="size-4" /> },
-  { label: "Brand Graphics", icon: <Sparkles className="size-4" /> },
-  { label: "Brand Migration", icon: <ArrowRight className="size-4 rotate-180" /> },
-  { label: "Package Design", icon: <Star className="size-4" /> },
-  { label: "Branding", icon: <Circle className="size-4" /> },
+  { label: "Python", icon: <Code className="size-4" /> },
+  { label: "TensorFlow", icon: <Cpu className="size-4" /> },
+  { label: "PyTorch", icon: <Cpu className="size-4" /> },
+  { label: "Deep Learning", icon: <Brain className="size-4" /> },
+  { label: "Computer Vision", icon: <Image className="size-4" /> },
+  { label: "NLP", icon: <MessageSquare className="size-4" /> },
 ]
 
 const bottomRow: MarqueeItem[] = [
-  { label: "Optimization", icon: <Sparkles className="size-4" /> },
-  { label: "Brand Landing Pages", icon: <Circle className="size-4" /> },
-  { label: "Social Media", icon: <ArrowRight className="size-4" /> },
-  { label: "Icons", icon: <Star className="size-4" /> },
-  { label: "Brand Visibility", icon: <Circle className="size-4" /> },
-  { label: "Brand Integration", icon: <ArrowRight className="size-4 rotate-180" /> },
+  { label: "OpenCV", icon: <Image className="size-4" /> },
+  { label: "Scikit-learn", icon: <BarChart3 className="size-4" /> },
+  { label: "Transfer Learning", icon: <RefreshCw className="size-4" /> },
+  { label: "LLM Integration", icon: <Bot className="size-4" /> },
+  { label: "Docker", icon: <Container className="size-4" /> },
+  { label: "Flask", icon: <Server className="size-4" /> },
 ]
 
 function MarqueePill({ item }: { item: MarqueeItem }) {

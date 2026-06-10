@@ -38,24 +38,34 @@ const colorSchemes = {
 
 const defaultFaqs: FAQItem[] = [
   {
-    question: "What services do you provide?",
+    question: "What are your main areas of expertise?",
     answer:
-      "I specialize in brand identity and package design, with experience in web design, UI/UX, and creating cohesive brand experiences.",
+      "I specialize in Deep Learning, Computer Vision, and NLP. I have hands-on experience with TensorFlow, PyTorch, OpenCV, and LLM integration. My focus is on building practical AI systems that deliver measurable results.",
   },
   {
-    question: "How do I start working with you?",
+    question: "Are you currently available for internships?",
     answer:
-      "You can reach out through the contact button and share a quick brief. I’ll follow up with the next steps and timeline.",
+      "Yes! I am actively seeking an AI Engineer / Machine Learning Intern position. I’m a final-year CS student graduating in 2027 and open to remote or on-site opportunities.",
   },
   {
-    question: "How long does a project take?",
+    question: "What is your most successful project?",
     answer:
-      "Timelines depend on scope, but most projects move from concept to delivery in a few focused stages.",
+      "HireMind AI — an AI-powered recruitment platform that achieved 87% candidate-job matching accuracy and reduced resume screening time by 60%.",
   },
   {
-    question: "Do you offer revisions?",
+    question: "Tell me about your research paper.",
     answer:
-      "Yes, revisions are included so the final direction feels aligned and polished.",
+      "I co-authored “Automated Aquarium Fish Classification Using Deep Transfer Learning”, currently under review. We achieved 95.05% classification accuracy using fine-tuned ResNet50 on a custom dataset.",
+  },
+  {
+    question: "Which technologies do you use the most?",
+    answer:
+      "My core stack includes Python, TensorFlow, PyTorch, OpenCV, Scikit-learn, Docker, and Flask. I also work with HTML, CSS, JavaScript, and Next.js for full-stack AI applications.",
+  },
+  {
+    question: "Do you have experience with real-time AI applications?",
+    answer:
+      "Yes. In AquaVision AI, I built a fish species classification system that performs real-time inference in under 2 seconds using transfer learning.",
   },
 ]
 

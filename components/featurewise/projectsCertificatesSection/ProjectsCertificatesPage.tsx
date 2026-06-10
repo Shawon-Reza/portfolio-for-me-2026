@@ -33,15 +33,12 @@ export default function ProjectsCertificatesPage() {
     return (
         // mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8
         <section className=" py-12 ">
-            <div className="mx-auto max-w-6xl text-center mb-8">
-                <h2 className="text-2xl font-semibold text-white">Selected Projects</h2>
-                <p className="mt-2 text-sm text-white/60">Case studies and packaging work</p>
-            </div>
+           
 
 
             <div className="flex flex-col gap-2 lg:flex-row lg:items-start">
 
-                <div className="flex w-full flex-col gap-2 lg:w-1/3 mt-[15%] xl:mt-[12.5%]">
+                <div className="flex w-full flex-col gap-2 lg:w-1/3 mt-[15%] xl:mt-[12.5%] 2xl:mt-[11%]">
                     {leftIds.map((id) => (
                         <Card id={id} key={`l-${id}`} />
                     ))}
@@ -53,7 +50,7 @@ export default function ProjectsCertificatesPage() {
                     ))}
                 </div>
 
-                <div className="flex w-full flex-col gap-2 lg:w-1/3 mt-[15%] xl:mt-[12.5%]">
+                <div className="flex w-full flex-col gap-2 lg:w-1/3 mt-[15%] xl:mt-[12.5%] 2xl:mt-[11%]">
                     {rightIds.map((id) => (
                         <Card id={id} key={`r-${id}`} />
                     ))}

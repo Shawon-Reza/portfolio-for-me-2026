@@ -49,3 +49,8 @@ html.lenis body {
 html {
   scroll-behavior: smooth;
 }
+
+/*========================== Hide the Cursor ======================= */
+body {
+  cursor: none;
+}

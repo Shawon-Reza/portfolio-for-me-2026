@@ -1,5 +1,4 @@
 "use client"
-
 import React from "react"
 
 type TimelineItem = {
@@ -18,38 +17,50 @@ type AboutMeProps = {
 }
 
 const defaultTimeline: TimelineItem[] = [
-  { role: "Freelance", company: "GreenLeaf Co", date: "Currently" },
-  { role: "Brand Designer", company: "UrbanFit Studio", date: "2023-24" },
-  { role: "Package Designer", company: "GreenK Studio", date: "2020-22" },
+  { 
+    role: "AI Engineer & Researcher", 
+    company: "Personal Projects & Research", 
+    date: "2025 – Present" 
+  },
+  { 
+    role: "Final Year CS Student", 
+    company: "Daffodil International University", 
+    date: "2023 – 2027" 
+  },
+  { 
+    role: "AI/ML Project Developer", 
+    company: "Multiple Open Source Projects", 
+    date: "2025 – Present" 
+  },
 ]
 
 export default function AboutMe({
-  title = "Meet Meily",
-  description =
-    "I'm Meily, a passionate Brand Identity & Package Designer based in tokyo. I specialize in crafting bold visual identities and packaging that captivate and inspire, blending creativity with strategy to elevate brands.",
+  title = "Meet Jannatul",
+  description = 
+    "I'm Jannatul Ferdaues, a passionate final-year Computer Science student and AI Engineer based in Dhaka, Bangladesh. I specialize in building practical AI solutions in Computer Vision and NLP that deliver real, measurable results — 95% classification accuracy, 87% candidate matching precision, and 98% error detection.",
   tags = [
-    "Product Design",
-    "Brand Identity Design",
-    "UX Design",
-    "Branding",
-    "Packaging Design",
-    "Figma",
-    "Photoshop",
+    "Deep Learning",
+    "Computer Vision",
+    "NLP & LLMs",
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "OpenCV",
+    "Transfer Learning",
   ],
   timeline = defaultTimeline,
-  imageSrc = 'https://picsum.photos/seed/meily/1200/1200',
-  imageAlt = 'Meily portrait',
+  imageSrc = 'https://picsum.photos/seed/meily/1200/1200', // Replace with your real photo
+  imageAlt = 'Jannatul Ferdaues portrait',
 }: AboutMeProps) {
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-8 lg:px-12">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
         <div>
           <h1 className="text-4xl font-light leading-tight text-white sm:text-5xl md:text-6xl">{title}</h1>
-
           <p className="mt-6 max-w-xl text-sm text-white/70">{description}</p>
-
+          
           <hr className="my-8 border-t border-white/6" />
-
+          
           <div className="flex flex-wrap gap-3">
             {tags.map((t) => (
               <span
@@ -62,7 +73,7 @@ export default function AboutMe({
           </div>
 
           <hr className="my-8 border-t border-white/6" />
-
+          
           <div className="space-y-8 text-sm text-white/80">
             {timeline.map((row, idx) => (
               <div
@@ -85,7 +96,6 @@ export default function AboutMe({
               className="h-64 w-full object-cover sm:h-72 md:h-80 lg:h-full lg:max-h-[520px]"
               loading="lazy"
             />
-
             <div className="absolute left-4 top-4 rounded-full bg-black/50 px-4 py-2 text-sm font-medium text-white backdrop-blur">
               About Me
             </div>

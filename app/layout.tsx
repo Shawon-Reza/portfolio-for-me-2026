@@ -14,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body suppressHydrationWarning className="min-h-full flex flex-col">
+      <body
+      //  suppressHydrationWarning 
+       
+       className="min-h-full flex flex-col">
         {/* {children} */}
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>

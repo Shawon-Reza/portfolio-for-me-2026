@@ -150,9 +150,9 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
 
             <div className="mt-4 flex flex-wrap gap-3">
               {[
-                "Product Design",
-                "Brand Identity Design",
-                "Branding",
+                "Deep Learning",
+                "Computer Vision",
+                "NLP & LLMs",
               ].map((tag) => (
                 <span
                   key={tag}
@@ -163,7 +163,7 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
               ))}
             </div>
 
-            <div className="mt-6 border-t border-white/8 pt-6">
+            {/* <div className="mt-6 border-t border-white/8 pt-6">
               <a
                 href="#"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white shadow-[0_0_18px_rgba(255,255,255,0.08)] transition hover:-translate-y-0.5 hover:bg-white/10"
@@ -171,7 +171,7 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
                 Book a Free Call
                 <ArrowUpRight className="size-4" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col gap-4 lg:pt-2">

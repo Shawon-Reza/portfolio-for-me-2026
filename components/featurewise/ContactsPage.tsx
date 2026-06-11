@@ -7,14 +7,25 @@ import { FaXTwitter } from "react-icons/fa6"
 
 // Customize these details here
 const CONTACT_INFO = {
-    email: "aarab.nishchal@gmail.com", // Or "jannatul.ferdaues.soha@gmail.com"
-    location: "Bhubaneswar, Odisha, India", // Or "Dhaka, Bangladesh"
+    email: "jannatul.ferdaues.soha@gmail.com",
+    phone: "+880 1601 315415",
+    location: "Dhaka, Bangladesh",
     socials: [
-        { name: "GitHub", href: "https://github.com", icon: FaGithub },
-        { name: "LinkedIn", href: "https://linkedin.com", icon: FaLinkedin },
-        { name: "Telegram", href: "https://telegram.org", icon: FaTelegramPlane },
-        { name: "X", href: "https://x.com", icon: FaXTwitter },
-        { name: "Website", href: "#", icon: Globe },
+        {
+            name: "GitHub",
+            href: "https://github.com/jannatul-ferdaues",
+            icon: FaGithub
+        },
+        {
+            name: "LinkedIn",
+            href: "https://linkedin.com/in/jannatul-ferdaues",
+            icon: FaLinkedin
+        },
+        {
+            name: "Email",
+            href: "mailto:jannatul.ferdaues.soha@gmail.com",
+            icon: Mail
+        },
     ]
 }
 

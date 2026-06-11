@@ -28,7 +28,7 @@ export default function HeroPage() {
                     </h1>
 
 
-                    {/* <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
+                    <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
                         Final-year Computer Science student specializing in Computer Vision, Deep Learning,
                         and NLP. I build practical AI systems with proven impact — <CountUp
                             from={0}
@@ -65,14 +65,14 @@ export default function HeroPage() {
                             onEnd={() => { }}
                         />
                         % error detection.
-                    </p> */}
+                    </p>
 
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
                         <Link
-                            href="#projects"
+                            href="#contact"
                             className="inline-flex min-w-44 items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/5 px-6 py-3 text-sm font-medium text-white shadow-[0_0_24px_rgba(255,255,255,0.14)] transition hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] sm:text-base"
                         >
-                            Get Started Now
+                            Lets Connect
                             <ArrowRight className="h-4 w-4" />
                         </Link>
 

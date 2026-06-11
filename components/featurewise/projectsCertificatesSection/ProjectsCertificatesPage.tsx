@@ -126,7 +126,7 @@ export default function ProjectsCertificatesPage() {
       <div className="flex flex-col gap-3 lg:flex-row lg:items-start">
 
         {/* LEFT */}
-        <div className="flex w-full flex-col gap-3 lg:w-1/3 lg:mt-24">
+        <div className="flex w-full flex-col gap-3 lg:w-1/3 lg:mt-37">
           {leftCerts.map((cert, i) => (
             <Card cert={cert} key={`left-${i}`} />
           ))}
@@ -140,7 +140,7 @@ export default function ProjectsCertificatesPage() {
         </div>
 
         {/* RIGHT */}
-        <div className="flex w-full flex-col gap-3 lg:w-1/3 lg:mt-24">
+        <div className="flex w-full flex-col gap-3 lg:w-1/3 lg:mt-37">
           {rightCerts.map((cert, i) => (
             <Card cert={cert} key={`right-${i}`} />
           ))}

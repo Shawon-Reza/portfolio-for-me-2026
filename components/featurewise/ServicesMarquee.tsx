@@ -41,7 +41,7 @@ function MarqueePill({ item }: { item: MarqueeItem }) {
 
 export default function ServicesMarquee() {
   return (
-    <section className="w-full overflow-hidden bg-transparent py-8 sm:py-10 lg:py-12">
+    <section className="w-full overflow-hidden bg-[#091413] py-8 sm:py-10 lg:py-12">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="space-y-4 overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] sm:space-y-5">
           <Marquee pauseOnHover repeat={3} className="gap-4 p-0 [--duration:26s] sm:gap-5">

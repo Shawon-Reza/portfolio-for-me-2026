@@ -28,22 +28,24 @@ const page = () => {
       {/* ============== Hero Page ========= */}
       <section
         id="hero"
-        className="relative overflow-hidden mt-16">
-        <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
-          {/* <DarkVeil
+        className="relative overflow-hidden"
+      >
+        {/* Background */}
+        <div className="absolute inset-0 z-0 opacity-85 saturate-150 contrast-125 mix-blend-screen">
+          <DarkVeil
             hueShift={185}
             noiseIntensity={0.02}
-            scanlineIntensity={0.00}
+            scanlineIntensity={0.0}
             speed={0.5}
             scanlineFrequency={7}
             warpAmount={0.16}
-          /> */}
+          />
         </div>
 
+        {/* Content */}
         <div className="relative z-10">
           <HeroPage />
           <ServicesMarquee />
-          {/* <SkillMarquee /> */}
         </div>
       </section>
 

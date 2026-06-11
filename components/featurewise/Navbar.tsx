@@ -72,7 +72,7 @@ export default function Navbar() {
                                     height={100} />
                             </div>
                             <span
-                                className="text-xl font-bold tracking-tight">Soha Rahman</span>
+                                className="text-xl font-bold tracking-tight">Jannatul Ferdaues</span>
                         </a>
                     </div>
 

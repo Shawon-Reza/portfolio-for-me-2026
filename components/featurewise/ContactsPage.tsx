@@ -4,6 +4,7 @@ import React, { useState, FormEvent } from "react"
 import { Mail, MapPin, SendHorizontal, Send, Globe } from "lucide-react"
 import { FaGithub, FaLinkedin, FaTelegramPlane } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
+import { motion } from "framer-motion";
 
 // Customize these details here
 const CONTACT_INFO = {
@@ -40,6 +41,7 @@ export default function ContactsPage() {
         e.preventDefault()
         if (!name || !email || !message) return
 
+        console.log("Form Data Submitted:", { name, email, subject, message })
         setStatus("sending")
         // Simulate API request
         try {
@@ -56,24 +58,40 @@ export default function ContactsPage() {
     }
 
     return (
-        <section className="relative w-full py-24 px-4 md:px-8 max-w-6xl mx-auto overflow-hidden">
+        <section className="relative w-full py-24 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
             {/* Ambient background glow matching the screenshot's nebulas */}
             <div className="pointer-events-none absolute -left-16 top-1/4 -z-10 h-72 w-72 rounded-full bg-white/[0.02] blur-[120px]" />
             <div className="pointer-events-none absolute -right-16 bottom-1/4 -z-10 h-72 w-72 rounded-full bg-white/[0.01] blur-[120px]" />
 
             {/* Main glowing header */}
-            <h2
+            <motion.h2
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                }}
                 className="text-center text-4xl md:text-5xl lg:text-6xl font-mono tracking-wide text-white mb-20"
                 style={{
                     textShadow: "0 0 12px rgba(255,255,255,0.7), 0 0 25px rgba(255,255,255,0.3)"
                 }}
             >
                 Let's Connect
-            </h2>
+            </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+
                 {/* Left column: Contact Form */}
-                <div className="lg:col-span-7 bg-neutral-950/40 border border-neutral-800/60 rounded-2xl p-6 md:p-8 backdrop-blur-md shadow-2xl">
+                <motion.div
+                    initial={{ opacity: 0, x: -70 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="lg:col-span-7 bg-white/10 border border-neutral-800/60 rounded-2xl p-6 md:p-8 backdrop-blur-md shadow-2xl">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         {/* Name and Email inputs */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -142,10 +160,18 @@ export default function ContactsPage() {
                             </span>
                         </button>
                     </form>
-                </div>
+                </motion.div>
 
                 {/* Right column: Info and Socials */}
-                <div className="lg:col-span-5 space-y-8">
+                <motion.div
+                    initial={{ opacity: 0, x: 70 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className="lg:col-span-5 space-y-8">
                     <div>
                         <h3
                             className="text-xl font-bold font-mono tracking-wide text-white mb-6"
@@ -158,7 +184,7 @@ export default function ContactsPage() {
 
                         <div className="space-y-4">
                             {/* Email Card */}
-                            <div className="bg-neutral-950/40 border border-neutral-800/60 rounded-xl p-4 flex items-center gap-4 backdrop-blur-md transition-colors hover:border-neutral-700/60">
+                            <div className="bg-white/10 border border-neutral-800/60 rounded-xl p-4 flex items-center gap-4 backdrop-blur-md transition-colors hover:border-neutral-700/60">
                                 <div className="w-12 h-12 rounded-xl border border-neutral-800 bg-neutral-900/50 flex items-center justify-center text-neutral-400 shrink-0">
                                     <Mail size={20} />
                                 </div>
@@ -171,7 +197,7 @@ export default function ContactsPage() {
                             </div>
 
                             {/* Location Card */}
-                            <div className="bg-neutral-950/40 border border-neutral-800/60 rounded-xl p-4 flex items-center gap-4 backdrop-blur-md transition-colors hover:border-neutral-700/60">
+                            <div className="bg-white/10 border border-neutral-800/60 rounded-xl p-4 flex items-center gap-4 backdrop-blur-md transition-colors hover:border-neutral-700/60">
                                 <div className="w-12 h-12 rounded-xl border border-neutral-800 bg-neutral-900/50 flex items-center justify-center text-neutral-400 shrink-0">
                                     <MapPin size={20} />
                                 </div>
@@ -203,7 +229,8 @@ export default function ContactsPage() {
                             ))}
                         </div>
                     </div>
-                </div>
+                </motion.div>
+
             </div>
         </section>
     )

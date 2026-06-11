@@ -13,7 +13,7 @@ export default function ZoomInReavelComponents({ children }: RevealProps) {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{
-                once: true,
+                once: false,
                 amount: 0.2,
             }}
             transition={{

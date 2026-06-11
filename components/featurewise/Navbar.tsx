@@ -3,7 +3,9 @@
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, Sparkles } from "lucide-react"
+import Image from "next/image"
 const resume = "/Resume.pdf"
+
 
 const NAV_ITEMS = [
     // { label: "Services", href: "#services" },
@@ -62,7 +64,12 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         <a href="#hero" className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                                <Sparkles className="w-5 h-5 text-white" aria-hidden />
+                                {/* <Sparkles className="w-5 h-5 text-white" aria-hidden /> */}
+                                <Image
+                                    src="/logo.png"
+                                    alt="Logo"
+                                    width={100}
+                                    height={100} />
                             </div>
                             <span
                                 className="text-xl font-bold tracking-tight">Soha Rahman</span>
@@ -74,17 +81,16 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                         <nav className="hidden lg:flex lg:items-center lg:space-x-6">
                             {NAV_ITEMS.map((item) => {
-                                const isActive = activeSection === item.href.replace("#", "") || 
-                                                 (item.href === "#projects" && activeSection === "services")
+                                const isActive = activeSection === item.href.replace("#", "") ||
+                                    (item.href === "#projects" && activeSection === "services")
                                 return (
                                     <a
                                         key={item.href}
                                         href={item.href}
-                                        className={`relative px-4 py-2 rounded-full text-md font-medium transition-all duration-300 ${
-                                            isActive 
-                                                ? "text-white bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_0_15px_rgba(255,255,255,0.02)]" 
-                                                : "text-[#9E9E9E] hover:text-white border border-transparent"
-                                        }`}
+                                        className={`relative px-4 py-2 rounded-full text-md font-medium transition-all duration-300 ${isActive
+                                            ? "text-white bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_0_15px_rgba(255,255,255,0.02)]"
+                                            : "text-[#9E9E9E] hover:text-white border border-transparent"
+                                            }`}
                                     >
                                         {item.label}
                                         {isActive && (
@@ -148,19 +154,18 @@ export default function Navbar() {
 
                         <nav className="flex flex-col gap-2">
                             {NAV_ITEMS.map((item) => {
-                                const isActive = activeSection === item.href.replace("#use" /* fallback */, "") || 
-                                                 activeSection === item.href.replace("#", "") || 
-                                                 (item.href === "#projects" && activeSection === "services")
+                                const isActive = activeSection === item.href.replace("#use" /* fallback */, "") ||
+                                    activeSection === item.href.replace("#", "") ||
+                                    (item.href === "#projects" && activeSection === "services")
                                 return (
                                     <a
                                         key={item.href}
                                         href={item.href}
                                         onClick={() => setOpen(false)}
-                                        className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
-                                            isActive 
-                                                ? "text-white bg-white/10 border-l-2 border-[#a78bfa]" 
-                                                : "text-[#9E9E9E] hover:text-white hover:bg-white/5"
-                                        }`}
+                                        className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${isActive
+                                            ? "text-white bg-white/10 border-l-2 border-[#a78bfa]"
+                                            : "text-[#9E9E9E] hover:text-white hover:bg-white/5"
+                                            }`}
                                     >
                                         {item.label}
                                     </a>

@@ -26,7 +26,7 @@ export default function Navbar() {
                                 <Sparkles className="w-5 h-5 text-white" aria-hidden />
                             </div>
                             <span
-                            className="text-lg font-semibold tracking-tight">Soha Rahman</span>
+                            className="text-lg font-bold tracking-tight">Soha Rahman</span>
                         </a>
                     </div>
 

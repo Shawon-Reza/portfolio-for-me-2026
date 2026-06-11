@@ -27,38 +27,44 @@ export default function HeroPage() {
                         AI Solutions that<br />Deliver Real Results
                     </h1>
 
-                    
+
                     <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
                         Final-year Computer Science student specializing in Computer Vision, Deep Learning,
                         and NLP. I build practical AI systems with proven impact — <CountUp
-                        from={0}
-                        to={95}
-                        separator=","
-                        direction="up"
-                        duration={1}
-                        className="count-up-text"
-                        delay={0}
-                    />
-% classification accuracy,
+                            from={0}
+                            to={95}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            className="count-up-text"
+                            delay={0}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                        />
+                        % classification accuracy,
                         <CountUp
-                        from={0}
-                        to={87}
-                        separator=","
-                        direction="up"
-                        duration={1}
-                        className="count-up-text"
-                        delay={0}
-                    />
-% candidate matching precision, and <CountUp
-                        from={0}
-                        to={98}
-                        separator=","
-                        direction="up"
-                        duration={1}
-                        className="count-up-text"
-                        delay={0}
-                    />
-% error detection.
+                            from={0}
+                            to={87}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            className="count-up-text"
+                            delay={0}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                        />
+                        % candidate matching precision, and <CountUp
+                            from={0}
+                            to={98}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            className="count-up-text"
+                            delay={0}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                        />
+                        % error detection.
                     </p>
 
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">

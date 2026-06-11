@@ -1,23 +1,62 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, Sparkles } from "lucide-react"
+const resume = "/Resume.pdf"
 
 const NAV_ITEMS = [
-    { label: "Services", href: "#services" },
+    // { label: "Services", href: "#services" },
     { label: "Certificates", href: "#certificates" },
-    { label: "Testimonials", href: "#testimonials" },
+    { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
 ]
 
-export default function Navbar() {  
+export default function Navbar() {
     const [open, setOpen] = useState(false)
+    const [activeSection, setActiveSection] = useState("")
+
+    useEffect(() => {
+        const observerOptions = {
+            root: null,
+            rootMargin: "-20% 0px -40% 0px", // More generous viewport check
+            threshold: 0, // Trigger immediately when entering/leaving bounds
+        }
+
+        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id)
+                }
+            })
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, observerOptions)
+
+        // Observe each nav item target section
+        NAV_ITEMS.forEach((item) => {
+            const id = item.href.replace("#", "")
+            const el = document.getElementById(id)
+            if (el) observer.observe(el)
+        })
+
+        // Also observe inner services id since that is projects
+        const servicesEl = document.getElementById("services")
+        if (servicesEl) observer.observe(servicesEl)
+
+        // Also observe hero so that when scrolled to top, nothing is highlighted
+        const heroEl = document.getElementById("hero")
+        if (heroEl) observer.observe(heroEl)
+
+        return () => {
+            observer.disconnect()
+        }
+    }, [])
 
     return (
-        <header className="text-[#9E9E9E] fixed top-0 left-0 w-full z-90 bg-black/5
+        <header className="text-[#9E9E9E]  fixed top-0 left-0 w-full z-90 bg-black/5
          backdrop-blur-lg border-b border-white/10 ">
-           
+
             <div className=" mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-4">
@@ -26,7 +65,7 @@ export default function Navbar() {
                                 <Sparkles className="w-5 h-5 text-white" aria-hidden />
                             </div>
                             <span
-                            className="text-lg font-bold tracking-tight">Soha Rahman</span>
+                                className="text-xl font-bold tracking-tight">Soha Rahman</span>
                         </a>
                     </div>
 
@@ -34,37 +73,39 @@ export default function Navbar() {
 
                     <div className="flex items-center gap-4">
                         <nav className="hidden lg:flex lg:items-center lg:space-x-6">
-                            {NAV_ITEMS.map((item) => (
-                                <a
-                                    key={item.href}
-                                    href={item.href}
-                                    className="relative px-3 py-2 rounded-md text-sm font-medium hover:bg-white/5 transition"
-                                >
-                                    {item.label}
-                                    {/* example focus ring */}
-                                </a>
-                            ))}
+                            {NAV_ITEMS.map((item) => {
+                                const isActive = activeSection === item.href.replace("#", "") || 
+                                                 (item.href === "#projects" && activeSection === "services")
+                                return (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        className={`relative px-4 py-2 rounded-full text-md font-medium transition-all duration-300 ${
+                                            isActive 
+                                                ? "text-white bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_0_15px_rgba(255,255,255,0.02)]" 
+                                                : "text-[#9E9E9E] hover:text-white border border-transparent"
+                                        }`}
+                                    >
+                                        {item.label}
+                                        {isActive && (
+                                            <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-6 h-[3px] rounded-full bg-gradient-to-r from-[#a78bfa] to-[#38bdf8] shadow-[0_0_8px_rgba(167,139,250,0.8)]" />
+                                        )}
+                                    </a>
+                                )
+                            })}
                         </nav>
                         {/* CTA */}
                         {/* #9E9E9E */}
                         <a
-                            href="#"
+                            href="/Resume.pdf"
+                            // target="_blank"
+                            // rel="noopener noreferrer"
+                            download
+                            rel="noopener noreferrer"
                             className="hidden lg:inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium hover:bg-white/10 transition"
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-4 h-4"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                aria-hidden
-                            >
-                                <path d="M12 2l3 6 6 .5-4.5 3 1.5 6L12 15l-6 3 1.5-6L3 8.5 9 8 12 2z" />
-                            </svg>
-                            Get Template
+
+                            Get Resume
                         </a>
 
                         {/* Mobile menu button */}
@@ -106,22 +147,33 @@ export default function Navbar() {
                         </div>
 
                         <nav className="flex flex-col gap-2">
-                            {NAV_ITEMS.map((item) => (
-                                <a
-                                    key={item.href}
-                                    href={item.href}
-                                    onClick={() => setOpen(false)}
-                                    className="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/5 transition"
-                                >
-                                    {item.label}
-                                </a>
-                            ))}
+                            {NAV_ITEMS.map((item) => {
+                                const isActive = activeSection === item.href.replace("#use" /* fallback */, "") || 
+                                                 activeSection === item.href.replace("#", "") || 
+                                                 (item.href === "#projects" && activeSection === "services")
+                                return (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        onClick={() => setOpen(false)}
+                                        className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
+                                            isActive 
+                                                ? "text-white bg-white/10 border-l-2 border-[#a78bfa]" 
+                                                : "text-[#9E9E9E] hover:text-white hover:bg-white/5"
+                                        }`}
+                                    >
+                                        {item.label}
+                                    </a>
+                                )
+                            })}
 
                             <a
-                                href="#"
+                                href={resume}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium hover:bg-white/10 transition max-w-max"
                             >
-                                <Sparkles className="w-4 h-4" /> Get Template
+                                Get Resume
                             </a>
                         </nav>
                     </aside>

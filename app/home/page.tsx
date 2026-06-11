@@ -13,6 +13,7 @@ import RevealAnimation from '@/components/RevealAnimation'
 import MagicRings from './../../components/MagicRings';
 import ZoomInReavelComponents from '@/components/featurewise/ZoomInReavelComponents'
 import ServicesMarquee from '@/components/featurewise/ServicesMarquee'
+import ContactsPage from '@/components/featurewise/ContactsPage'
 
 const page = () => {
   return (
@@ -67,16 +68,16 @@ const page = () => {
 
 
 
-      <section
+      {/* <section
         id="work"
       >
         <RecentWork />
-      </section>
+      </section> */}
 
 
 
       <section
-        id="services"
+        id="projects"
       >
         <Services />
       </section>
@@ -92,7 +93,7 @@ const page = () => {
 
       <RevealAnimation>
         <section
-          id="contact"
+          id="faq"
         >
           <FAQ />
         </section>
@@ -103,7 +104,14 @@ const page = () => {
 
       <section
         id="contact"
-        className="relative overflow-hidden">
+      >
+        <ContactsPage />
+      </section>
+
+
+      <section
+        className="relative overflow-hidden"
+      >
         {/* <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
           <DarkVeil
             hueShift={185}
@@ -144,14 +152,12 @@ const page = () => {
           />
         </div>
 
-
-
-
         <Footer />
+
       </section>
 
 
-    </div>
+    </div >
   )
 }
 

@@ -11,6 +11,7 @@ import Footer from '@/components/featurewise/Footer'
 import DarkVeil from '@/components/ui/DarkVeil'
 import RevealAnimation from '@/components/RevealAnimation'
 import MagicRings from './../../components/MagicRings';
+import ZoomInReavelComponents from '@/components/featurewise/ZoomInReavelComponents'
 
 const page = () => {
   return (
@@ -44,13 +45,14 @@ const page = () => {
       </section>
 
 
+      <ZoomInReavelComponents>
+        <section
+          id="projects"
+        >
+          <ProjectsCertificatesPage />
 
-      <section
-        id="projects"
-      >
-        <ProjectsCertificatesPage />
-
-      </section>
+        </section>
+      </ZoomInReavelComponents>
 
 
 
@@ -88,13 +90,13 @@ const page = () => {
       </section>
 
 
-
-      <section
-        id="contact"
-      >
-        <FAQ />
-      </section>
-
+      <RevealAnimation>
+        <section
+          id="contact"
+        >
+          <FAQ />
+        </section>
+      </RevealAnimation>
 
 
 

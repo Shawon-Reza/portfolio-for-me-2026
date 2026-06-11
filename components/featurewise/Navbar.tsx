@@ -6,7 +6,7 @@ import { Menu, X, Sparkles } from "lucide-react"
 
 const NAV_ITEMS = [
     { label: "Services", href: "#services" },
-    { label: "Projects", href: "#projects" },
+    { label: "Certificates", href: "#certificates" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
 ]

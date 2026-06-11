@@ -12,6 +12,7 @@ import DarkVeil from '@/components/ui/DarkVeil'
 import RevealAnimation from '@/components/RevealAnimation'
 import MagicRings from './../../components/MagicRings';
 import ZoomInReavelComponents from '@/components/featurewise/ZoomInReavelComponents'
+import ServicesMarquee from '@/components/featurewise/ServicesMarquee'
 
 const page = () => {
   return (
@@ -27,34 +28,23 @@ const page = () => {
       <section
         id="hero"
         className="relative overflow-hidden mt-16">
-        {/* <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
-          <DarkVeil
+        <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
+          {/* <DarkVeil
             hueShift={185}
             noiseIntensity={0.02}
             scanlineIntensity={0.00}
             speed={0.5}
             scanlineFrequency={7}
             warpAmount={0.16}
-          />
-        </div> */}
+          /> */}
+        </div>
 
         <div className="relative z-10">
           <HeroPage />
-          <SkillMarquee />
+          <ServicesMarquee />
+          {/* <SkillMarquee /> */}
         </div>
       </section>
-
-
-      <ZoomInReavelComponents>
-        <section
-          id="projects"
-        >
-          <ProjectsCertificatesPage />
-
-        </section>
-      </ZoomInReavelComponents>
-
-
 
       <RevealAnimation>
         <section
@@ -63,6 +53,16 @@ const page = () => {
           <AboutMe />
         </section>
       </RevealAnimation>
+
+      <ZoomInReavelComponents>
+        <section
+          id="certificates"
+        >
+          <ProjectsCertificatesPage />
+
+        </section>
+      </ZoomInReavelComponents>
+
 
 
 
@@ -83,11 +83,11 @@ const page = () => {
 
 
 
-      <section
+      {/* <section
         id="testimonials"
       >
         <Reviews />
-      </section>
+      </section> */}
 
 
       <RevealAnimation>

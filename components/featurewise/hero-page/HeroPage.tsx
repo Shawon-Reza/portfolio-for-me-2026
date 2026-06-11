@@ -28,7 +28,7 @@ export default function HeroPage() {
                     </h1>
 
 
-                    <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
+                    {/* <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
                         Final-year Computer Science student specializing in Computer Vision, Deep Learning,
                         and NLP. I build practical AI systems with proven impact — <CountUp
                             from={0}
@@ -65,7 +65,7 @@ export default function HeroPage() {
                             onEnd={() => { }}
                         />
                         % error detection.
-                    </p>
+                    </p> */}
 
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
                         <Link

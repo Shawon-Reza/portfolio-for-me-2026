@@ -33,10 +33,10 @@ export default function Footer() {
 
             <div className="mt-8 flex justify-center">
               <a
-                href="#"
+                href="#contact"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm text-white shadow-[0_0_18px_rgba(255,255,255,0.12)] transition hover:-translate-y-0.5 hover:bg-white/10"
               >
-                Book a Free Call
+                Lets Connect
                 <ArrowUpRight className="size-4" />
               </a>
             </div>
@@ -95,7 +95,7 @@ export default function Footer() {
             </a>
 
             <div className="text-center text-white/70">
-              Dhaka, Bangladesh 
+              Dhaka, Bangladesh
             </div>
 
             <div className="text-left md:text-right text-white/70">

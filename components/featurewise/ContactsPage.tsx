@@ -43,15 +43,47 @@ export default function ContactsPage() {
 
         console.log("Form Data Submitted:", { name, email, subject, message })
         setStatus("sending")
-        // Simulate API request
+
+        const WEB3FORMS_KEY = "cfc5d363-63bd-4d49-ad0f-02969ab01f4f"
+        const emailBody = `
+Someone want to connect with you from your portfolio contact form :
+
+Name: ${name}
+Email: ${email}
+Inquiry Type: ${subject}
+
+Message:
+${message}
+        `.trim()
+
         try {
-            await new Promise((resolve) => setTimeout(resolve, 1500))
-            setStatus("success")
-            setName("")
-            setEmail("")
-            setMessage("")
-            setTimeout(() => setStatus("idle"), 4000)
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    access_key: WEB3FORMS_KEY,
+                    subject: `New Portfolio Message: ${subject} (from ${name})`,
+                    from_name: name,
+                    email: email,
+                    message: emailBody,
+                }),
+            })
+
+            const json = await response.json().catch(() => null)
+
+            if (response.ok && json?.success) {
+                setStatus("success")
+                setName("")
+                setEmail("")
+                setMessage("")
+                setTimeout(() => setStatus("idle"), 4000)
+            } else {
+                console.error("Web3Forms error:", json)
+                setStatus("error")
+                setTimeout(() => setStatus("idle"), 4000)
+            }
         } catch (error) {
+            console.error("Submit error:", error)
             setStatus("error")
             setTimeout(() => setStatus("idle"), 4000)
         }
@@ -156,7 +188,13 @@ export default function ContactsPage() {
                         >
                             <SendHorizontal size={16} />
                             <span>
-                                {status === "sending" ? "Sending..." : status === "success" ? "Message Sent!" : "Send Message"}
+                                {status === "sending"
+                                    ? "Sending..."
+                                    : status === "success"
+                                        ? "Message Sent!"
+                                        : status === "error"
+                                            ? "Failed to Send. Try again!"
+                                            : "Send Message"}
                             </span>
                         </button>
                     </form>

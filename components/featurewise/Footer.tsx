@@ -1,9 +1,7 @@
 import React from "react"
 import { ArrowUpRight, CircleDot } from "lucide-react"
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare, FaKaggle } from "react-icons/fa";
-import { SiCodeforces, SiHuggingface } from "react-icons/si";
-import { FaHackerrank } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 
@@ -28,7 +26,7 @@ export default function Footer() {
             <h2 className="text-3xl font-light tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
               Curious about what we can build together?
               <br />
-              Lets create intelligent AI solutions!
+              Lets create high-performance web experiences!
             </h2>
 
             <div className="mt-8 flex justify-center">
@@ -44,7 +42,7 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center justify-center gap-3 text-white/80">
             <Link
-              href="https://github.com/jannatul-fredaues"
+              href="https://github.com/Shawon-Reza"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
@@ -53,7 +51,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://www.linkedin.com/in/jannatul-ferdaues/"
+              href="https://www.linkedin.com/in/shawon-reza/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
@@ -61,55 +59,17 @@ export default function Footer() {
               <BsLinkedin size={28} />
             </Link>
 
-            {/* <Link
-              href="https://codeforces.com/profile/jannatul_fredaues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition"
-            >
-              <SiCodeforces size={28} />
-            </Link> */}
-
             <Link
-              href="https://www.kaggle.com/jannatulferdaues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
-            >
-              <FaKaggle size={28} />
-            </Link>
-
-            <Link
-              href="https://huggingface.co/jannatul-ferdaues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
-            >
-              <SiHuggingface size={28} />
-            </Link>
-
-            <Link
-              href="https://www.hackerrank.com/profile/jannatul_ferdau1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
-            >
-              <FaHackerrank size={28} />
-            </Link>
-
-            <Link
-              href="mailto: jannatul.ferdaues.soha@gmail.com"
+              href="mailto:shawon.reza.dev@gmail.com"
               className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <MdEmail size={28} />
             </Link>
-
           </div>
 
-
           <div className="grid gap-6 border-t border-white/8 pt-6 text-sm text-white/80 md:grid-cols-3 md:items-center md:text-base bg-none">
-            <a href="mailto:hello@framebase.design" className="text-left font-medium text-white transition hover:text-white/80">
-              jannatul.ferdaues.soha@gmail.com
+            <a href="mailto:shawon.reza.dev@gmail.com" className="text-left font-medium text-white transition hover:text-white/80">
+              shawon.reza.dev@gmail.com
             </a>
 
             <div className="text-center text-white/70">
@@ -117,7 +77,7 @@ export default function Footer() {
             </div>
 
             <div className="text-left md:text-right text-white/70">
-              2026 Jannatul Ferdaues. All Rights Reserved.
+              2026 Shawon Reza. All Rights Reserved.
             </div>
           </div>
         </div>

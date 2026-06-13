@@ -5,9 +5,9 @@ import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
-  title: "Jannatul Ferdaues - AI Engineer & Researcher",
-  description: "Final-year CS student at Daffodil International University | Specializing in Computer Vision, Deep Learning, and NLP. 5+ AI projects shipped with strong results. Open to AI Engineer internships.",
-  keywords: ["AI Engineer", "Computer Vision", "Deep Learning", "NLP", "TensorFlow", "PyTorch", "Machine Learning", "Jannatul Ferdaues", "Soha"],
+  title: "Shawon Reza - Jr. Frontend Developer",
+  description: "Jr. Frontend Developer with 1.5+ years of experience building high-performance web apps using React, Next.js, TypeScript & Tailwind CSS. Specialized in real-time features and modern UI/UX. Open to frontend opportunities.",
+  keywords: ["Frontend Developer", "React Developer", "Next.js", "TypeScript", "Tailwind CSS", "WebSocket", "PERN Stack", "JavaScript", "Shawon Reza", "Jr Frontend"],
   icons: {
     icon: "/fav.png",
   },

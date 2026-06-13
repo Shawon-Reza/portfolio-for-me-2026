@@ -14,12 +14,6 @@ const CountUp = dynamic(() => import('./../../CountUp'), {
 export default function HeroPage() {
     return (
         <section className="relative isolate overflow-hidden  text-white">
-            {/* <div className="pointer-events-none absolute inset-0">
-                <div className="absolute left-[-8%] top-[-10%] h-72 w-72 rounded-full bg-white/10 blur-3xl sm:h-96 sm:w-96" />
-                <div className="absolute right-[-10%] top-[18%] h-96 w-96 rounded-full bg-white/12 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
-                <div className="absolute bottom-[-15%] left-[18%] h-80 w-80 rounded-full bg-white/10 blur-3xl sm:h-[38rem] sm:w-[38rem]" />
-                <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
-            </div> */}
             <div className="absolute inset-0 -z-10">
                 <div className="
       absolute top-[-20%] left-[20%]
@@ -59,32 +53,20 @@ export default function HeroPage() {
             <div className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col items-center justify-center px-4 py-16 sm:px-6 lg:px-8">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-white/80 shadow-[0_0_30px_rgba(255,255,255,0.08)] backdrop-blur-md sm:text-sm">
                     <span className="h-2 w-2 rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
-                    Building AI That Works
+                    Building Modern Web Experiences
                 </div>
 
                 <div className="max-w-5xl text-center">
                     <h1 className="mx-auto max-w-4xl text-5xl font-light tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[5.5rem] lg:leading-[0.95]">
-                        AI Solutions that<br />Deliver Real Results
+                        High-Performance Web Apps<br />That Drive Results
                     </h1>
 
-
                     <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
-                        Final-year Computer Science student specializing in Computer Vision, Deep Learning,
-                        and NLP. I build practical AI systems with proven impact — <CountUp
-                            from={0}
-                            to={95}
-                            separator=","
-                            direction="up"
-                            duration={1}
-                            className="count-up-text"
-                            delay={0}
-                            onStart={() => { }}
-                            onEnd={() => { }}
-                        />
-                        % classification accuracy,
+                        Jr. Frontend Developer with 1.5+ years building responsive, scalable web applications using React, Next.js, TypeScript & Tailwind CSS. 
+                        Specialized in real-time features, clean UI/UX, and delivering exceptional user experiences — 
                         <CountUp
                             from={0}
-                            to={87}
+                            to={10}
                             separator=","
                             direction="up"
                             duration={1}
@@ -93,9 +75,10 @@ export default function HeroPage() {
                             onStart={() => { }}
                             onEnd={() => { }}
                         />
-                        % candidate matching precision, and <CountUp
+                        + client projects, 
+                        <CountUp
                             from={0}
-                            to={98}
+                            to={100}
                             separator=","
                             direction="up"
                             duration={1}
@@ -104,7 +87,19 @@ export default function HeroPage() {
                             onStart={() => { }}
                             onEnd={() => { }}
                         />
-                        % error detection.
+                        % on-time delivery, and consistent 
+                        <CountUp
+                            from={0}
+                            to={5}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            className="count-up-text"
+                            delay={0}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                        />
+                        -star client feedback.
                     </p>
 
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
@@ -130,7 +125,6 @@ export default function HeroPage() {
                     <span className="whitespace-nowrap">Scroll down</span>
                     <span className="h-px flex-1 bg-white/15" />
 
-                    {/* <MousePointer2 className="h-4 w-4" /> */}
                     <Lottie
                         className="h-10 w-10"
                         animationData={mouse}

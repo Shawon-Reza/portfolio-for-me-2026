@@ -40,32 +40,32 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "What are your main areas of expertise?",
     answer:
-      "I specialize in Deep Learning, Computer Vision, and NLP. I have hands-on experience with TensorFlow, PyTorch, OpenCV, and LLM integration. My focus is on building practical AI systems that deliver measurable results.",
+      "I specialize in building high-performance frontend applications using React, Next.js, TypeScript, and Tailwind CSS. I have strong experience with real-time features using WebSocket, modern state management, and delivering exceptional UI/UX.",
   },
   {
-    question: "Are you currently available for internships?",
+    question: "Are you currently available for opportunities?",
     answer:
-      "Yes! I am actively seeking an AI Engineer / Machine Learning Intern position. I’m a final-year CS student graduating in 2027 and open to remote or on-site opportunities.",
+      "Yes! I am actively seeking Jr. Frontend Developer or React/Next.js roles. With 1.5+ years of professional experience, I’m open to full-time, freelance, or contract opportunities.",
   },
   {
     question: "What is your most successful project?",
     answer:
-      "HireMind AI — an AI-powered recruitment platform that achieved 87% candidate-job matching accuracy and reduced resume screening time by 60%.",
+      "VacanzaMyCost — a multi-role tour management platform where I served as Frontend Lead. It features real-time chat, payments, Google Maps, dual language support, and AI image generation. Live at vacanzamycost.it.",
   },
   {
-    question: "Tell me about your research paper.",
+    question: "Tell me about your professional experience.",
     answer:
-      "I co-authored “Automated Aquarium Fish Classification Using Deep Transfer Learning”, currently under review. We achieved 95.05% classification accuracy using fine-tuned ResNet50 on a custom dataset.",
+      "I currently work as a Jr. Frontend Developer at Join Venture AI (JVAI) since May 2025. I have led frontend development for 10+ client projects, consistently delivering on time with 5-star reviews.",
   },
   {
     question: "Which technologies do you use the most?",
     answer:
-      "My core stack includes Python, TensorFlow, PyTorch, OpenCV, Scikit-learn, Docker, and Flask. I also work with HTML, CSS, JavaScript, and Next.js for full-stack AI applications.",
+      "My core stack includes React.js, Next.js, TypeScript, Tailwind CSS, WebSocket, TanStack Query, Node.js, Express.js, Prisma ORM, PostgreSQL, and MongoDB.",
   },
   {
-    question: "Do you have experience with real-time AI applications?",
+    question: "Do you have experience with real-time applications?",
     answer:
-      "Yes. In AquaVision AI, I built a fish species classification system that performs real-time inference in under 2 seconds using transfer learning.",
+      "Yes. I have implemented real-time messaging, notifications, and chat features using WebSocket in multiple projects including Kyro (AI Clinic System) and YourSelf Beauty (AI Skincare Platform).",
   },
 ]
 

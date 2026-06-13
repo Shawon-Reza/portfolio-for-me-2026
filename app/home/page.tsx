@@ -17,6 +17,7 @@ import ContactsPage from '@/components/featurewise/ContactsPage'
 import DotGrid from "../../components/DotGrid"
 import Plasma from "../../components/Plasma";
 import Particles from "../../components/Particles"
+import ProjectSection from '@/components/featurewise/projects/ProjectSection'
 const page = () => {
   return (
     <div className="min-h-screen bg-[#090E19] text-white relative ">
@@ -95,6 +96,13 @@ const page = () => {
         </section>
       </RevealAnimation>
 
+      <section
+        id=''
+        className='bg-[#0F1624]'
+      >
+        <ProjectSection />
+      </section>
+
       <ZoomInReavelComponents>
         <section
           id="certificates"
@@ -108,27 +116,27 @@ const page = () => {
 
 
 
-      {/* <section
+      <section
         id="work"
       >
         <RecentWork />
-      </section> */}
+      </section>
 
 
 
       <section
-        id="projects"
+        id="services"
       >
         <Services />
       </section>
 
 
 
-      {/* <section
+      <section
         id="testimonials"
       >
         <Reviews />
-      </section> */}
+      </section>
 
 
       <RevealAnimation>
@@ -152,16 +160,6 @@ const page = () => {
       <section
         className="relative overflow-hidden"
       >
-        {/* <div className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen">
-          <DarkVeil
-            hueShift={185}
-            noiseIntensity={0.02}
-            scanlineIntensity={0.00}
-            speed={0.5}
-            scanlineFrequency={7}
-            warpAmount={0.16}
-          />
-        </div> */}
 
         <div
           className="pointer-events-none absolute inset-0 z-0 h-screen w-full opacity-85 saturate-150 contrast-125 mix-blend-screen"

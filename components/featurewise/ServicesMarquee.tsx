@@ -13,21 +13,21 @@ type MarqueeItem = {
 }
 
 const topRow: MarqueeItem[] = [
-  { label: "Python", icon: <Code className="size-4" /> },
-  { label: "TensorFlow", icon: <Cpu className="size-4" /> },
-  { label: "PyTorch", icon: <Cpu className="size-4" /> },
-  { label: "Deep Learning", icon: <Brain className="size-4" /> },
-  { label: "Computer Vision", icon: <Image className="size-4" /> },
-  { label: "NLP", icon: <MessageSquare className="size-4" /> },
+  { label: "React.js", icon: <Code className="size-4" /> },
+  { label: "Next.js", icon: <Cpu className="size-4" /> },
+  { label: "TypeScript", icon: <Cpu className="size-4" /> },
+  { label: "Tailwind CSS", icon: <Brain className="size-4" /> },
+  { label: "WebSocket", icon: <MessageSquare className="size-4" /> },
+  { label: "Node.js", icon: <Server className="size-4" /> },
 ]
 
 const bottomRow: MarqueeItem[] = [
-  { label: "OpenCV", icon: <Image className="size-4" /> },
-  { label: "Scikit-learn", icon: <BarChart3 className="size-4" /> },
-  { label: "Transfer Learning", icon: <RefreshCw className="size-4" /> },
-  { label: "LLM Integration", icon: <Bot className="size-4" /> },
+  { label: "TanStack Query", icon: <Image className="size-4" /> },
+  { label: "Prisma ORM", icon: <BarChart3 className="size-4" /> },
+  { label: "PostgreSQL", icon: <RefreshCw className="size-4" /> },
+  { label: "MongoDB", icon: <Bot className="size-4" /> },
   { label: "Docker", icon: <Container className="size-4" /> },
-  { label: "Flask", icon: <Server className="size-4" /> },
+  { label: "Express.js", icon: <Server className="size-4" /> },
 ]
 
 function MarqueePill({ item }: { item: MarqueeItem }) {

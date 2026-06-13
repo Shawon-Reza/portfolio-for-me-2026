@@ -20,39 +20,39 @@ type AboutMeProps = {
 
 const defaultTimeline: TimelineItem[] = [
   {
-    role: "AI Engineer & Researcher",
-    company: "Personal Projects & Research",
-    date: "2025 – Present"
+    role: "Jr. Frontend Developer",
+    company: "Join Venture AI (JVAI)",
+    date: "May 2025 – Present"
   },
   {
-    role: "Final Year CS Student",
-    company: "Daffodil International University",
-    date: "2023 – 2027"
+    role: "Bachelor of Science in CSE",
+    company: "Green University of Bangladesh",
+    date: "Sep 2020 – Oct 2025"
   },
   {
-    role: "AI/ML Project Developer",
-    company: "Multiple Open Source Projects",
-    date: "2025 – Present"
+    role: "Frontend Lead / Full Stack Developer",
+    company: "Multiple Client & Personal Projects",
+    date: "2023 – Present"
   },
 ]
 
 export default function AboutMe({
-  title = "Meet Jannatul",
+  title = "Meet Shawon",
   description =
-  "I'm Jannatul Ferdaues, a passionate final-year Computer Science student and AI Engineer based in Dhaka, Bangladesh. I specialize in building practical AI solutions in Computer Vision and NLP that deliver real, measurable results — 95% classification accuracy, 87% candidate matching precision, and 98% error detection.",
+  "I'm Shawon Reza, a Jr. Frontend Developer with 1.5+ years of experience building responsive, high-performance web applications using React, Next.js, TypeScript, and Tailwind CSS. I specialize in real-time features with WebSocket, clean UI/UX, and delivering exceptional user experiences for multiple client projects.",
   tags = [
-    "Deep Learning",
-    "Computer Vision",
-    "NLP & LLMs",
-    "Python",
-    "TensorFlow",
-    "PyTorch",
-    "OpenCV",
-    "Transfer Learning",
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "WebSocket",
+    "TanStack Query",
+    "Node.js",
+    "Prisma ORM",
   ],
   timeline = defaultTimeline,
   imageSrc = soha, // Replace with your real photo
-  imageAlt = 'Jannatul Ferdaues portrait',
+  imageAlt = 'Shawon Reza portrait',
 }: AboutMeProps) {
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-8 lg:px-12">

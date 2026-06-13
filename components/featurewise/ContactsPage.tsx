@@ -2,7 +2,7 @@
 
 import React, { useState, FormEvent } from "react"
 import { Mail, MapPin, SendHorizontal, Send, Globe } from "lucide-react"
-import { FaGithub, FaLinkedin, FaTelegramPlane } from "react-icons/fa"
+import { FaFacebook, FaGithub, FaLinkedin, FaTelegram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { motion } from "framer-motion";
 
@@ -21,6 +21,16 @@ const CONTACT_INFO = {
             name: "LinkedIn",
             href: "https://linkedin.com/in/jannatul-ferdaues",
             icon: FaLinkedin
+        },
+        {
+            name: "Facebook",
+            href: "https://web.facebook.com/sr.rahman.soha",
+            icon: FaFacebook,
+        },
+        {
+            name: "WhatsApp",
+            href: "https://wa.me/8801601315415",
+            icon: FaWhatsapp,
         },
         {
             name: "Email",

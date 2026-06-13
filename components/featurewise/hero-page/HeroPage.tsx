@@ -4,7 +4,12 @@ import Link from "next/link"
 import { ArrowRight, MousePointer2, Sparkles } from "lucide-react"
 import Lottie from "lottie-react"
 import mouse from "@/assets/lottie/mouse.json"
-import CountUp from './../../CountUp';
+// import CountUp from './../../CountUp';
+import dynamic from "next/dynamic"
+
+const CountUp = dynamic(() => import('./../../CountUp'), {
+    ssr: false
+})
 
 export default function HeroPage() {
     return (

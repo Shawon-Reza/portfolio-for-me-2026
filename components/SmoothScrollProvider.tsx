@@ -10,7 +10,7 @@ interface SmoothScrollProviderProps {
 export default function SmoothScrollProvider({
   children,
 }: SmoothScrollProviderProps) {
-    
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.5,

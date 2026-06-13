@@ -17,8 +17,8 @@ export default function ZoomInReavelComponents({ children }: RevealProps) {
                 amount: 0.2,
             }}
             transition={{
-                duration: 1.9,
-                ease: "easeOut",
+                duration: 1.2,
+                ease: "linear",
             }}
         >
             {children}

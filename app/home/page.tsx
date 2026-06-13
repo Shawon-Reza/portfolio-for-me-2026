@@ -8,16 +8,15 @@ import Services from '@/components/featurewise/Services'
 import Reviews from '@/components/featurewise/client-review/Reviews'
 import FAQ from '@/components/featurewise/faq/FAQ'
 import Footer from '@/components/featurewise/Footer'
-import DarkVeil from '@/components/ui/DarkVeil'
+import DarkVeil from '@/components/ui/DynamicDarkVeil'
 import RevealAnimation from '@/components/RevealAnimation'
 import MagicRings from './../../components/MagicRings';
 import ZoomInReavelComponents from '@/components/featurewise/ZoomInReavelComponents'
 import ServicesMarquee from '@/components/featurewise/ServicesMarquee'
 import ContactsPage from '@/components/featurewise/ContactsPage'
-
 const page = () => {
   return (
-    <div className="min-h-screen bg-black/90 text-white">
+    <div className="min-h-screen bg-[#090E19] text-white">
       <section
         className="   "
       >
@@ -28,7 +27,7 @@ const page = () => {
       {/* ============== Hero Page ========= */}
       <section
         id="hero"
-        className="relative overflow-hidden"
+        className="relative overflow-hidden mt-16"
       >
         {/* Background */}
         <div className="absolute inset-0 z-0 opacity-85 saturate-150 contrast-125 mix-blend-screen">

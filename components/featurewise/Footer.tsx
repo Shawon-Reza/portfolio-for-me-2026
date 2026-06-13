@@ -1,8 +1,8 @@
 import React from "react"
 import { ArrowUpRight, CircleDot } from "lucide-react"
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
-import { SiCodeforces } from "react-icons/si";
+import { FaGithubSquare, FaKaggle } from "react-icons/fa";
+import { SiCodeforces, SiHuggingface } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
@@ -61,17 +61,35 @@ export default function Footer() {
               <BsLinkedin size={28} />
             </Link>
 
-            <Link
+            {/* <Link
               href="https://codeforces.com/profile/jannatul_fredaues"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400 transition"
             >
               <SiCodeforces size={28} />
+            </Link> */}
+
+            <Link
+              href="https://www.kaggle.com/jannatulferdaues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <FaKaggle size={28} />
             </Link>
 
             <Link
-              href="https://www.hackerrank.com/jannatul_fredaues"
+              href="https://huggingface.co/jannatul-ferdaues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition"
+            >
+              <SiHuggingface size={28} />
+            </Link>
+
+            <Link
+              href="https://www.hackerrank.com/profile/jannatul_ferdau1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-400 transition"

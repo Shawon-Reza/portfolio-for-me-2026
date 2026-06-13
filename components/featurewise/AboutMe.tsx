@@ -1,6 +1,7 @@
 "use client"
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react"
+import soha from "../../assets/soha.png"
 
 type TimelineItem = {
   role: string
@@ -13,7 +14,7 @@ type AboutMeProps = {
   description?: string
   tags?: string[]
   timeline?: TimelineItem[]
-  imageSrc?: string
+  imageSrc?: string | StaticImageData
   imageAlt?: string
 }
 
@@ -50,7 +51,7 @@ export default function AboutMe({
     "Transfer Learning",
   ],
   timeline = defaultTimeline,
-  imageSrc = 'https://picsum.photos/seed/meily/1200/1200', // Replace with your real photo
+  imageSrc = soha, // Replace with your real photo
   imageAlt = 'Jannatul Ferdaues portrait',
 }: AboutMeProps) {
   return (

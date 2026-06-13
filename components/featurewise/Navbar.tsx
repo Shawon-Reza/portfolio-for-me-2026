@@ -152,7 +152,7 @@ export default function Navbar() {
                             </button>
                         </div>
 
-                        <nav className="flex flex-col gap-2">
+                        <nav className="flex flex-col gap-2 bg-black/90 rounded-xl p-2">
                             {NAV_ITEMS.map((item) => {
                                 const isActive = activeSection === item.href.replace("#use" /* fallback */, "") ||
                                     activeSection === item.href.replace("#", "") ||

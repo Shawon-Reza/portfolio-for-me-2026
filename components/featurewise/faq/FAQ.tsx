@@ -123,7 +123,7 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
       className={cn("mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8", className)}
       {...props}
     >
-      <div className="overflow-hidden rounded-[2rem] border border-white/6 bg-black px-4 py-5 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+      <div className="overflow-hidden rounded-[2rem] border border-white/6 bg-[#0F1624] px-4 py-5 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-10">
           <div className="flex flex-col">
             <div className={cn("inline-flex w-fit items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs", colors.badge)}>

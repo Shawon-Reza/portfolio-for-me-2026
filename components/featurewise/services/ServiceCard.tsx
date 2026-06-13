@@ -39,7 +39,7 @@ export default function ServiceCard({ service, index, activeIndex }: Props) {
     >
       {/* ── Card shell ── */}
       <div
-        className="grid h-full overflow-hidden rounded-[22px] border border-white/[0.07] bg-[rgba(8,8,12,0.93)] shadow-[0_28px_80px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur-2xl lg:grid-cols-[1.1fr_0.9fr]"
+        className="grid h-full overflow-hidden rounded-[22px] border border-white/[0.07] bg-[#0F1624] shadow-[0_28px_80px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur-2xl lg:grid-cols-[1.1fr_0.9fr]"
         style={
           {
             "--accent": service.accent,

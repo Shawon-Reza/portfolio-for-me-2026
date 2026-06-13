@@ -1,11 +1,25 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import ReactLenis from "lenis/react";
 import { useRef } from "react";
 import Link from "next/link";
 import { allProjectDetails as projects } from "./allProjectDetails";
+
+interface StickyCardProps {
+    i: number;
+    id: string;
+    title: string;
+    src: string;
+    progress: MotionValue<number>;
+    range: number[];
+    targetScale: number;
+    description: string;
+    buttonText?: string;
+    bgColor?: string;
+    textColor?: string;
+}
 
 const StickyCard_001 = ({
     i,
@@ -19,7 +33,7 @@ const StickyCard_001 = ({
     buttonText,
     bgColor,
     textColor,
-}) => {
+}: StickyCardProps) => {
     const container = useRef(null);
     const scale = useTransform(progress, range, [1, targetScale]);
     useEffect(() => {

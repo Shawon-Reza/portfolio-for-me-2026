@@ -6,6 +6,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTelegram, FaTelegramPlane, FaWhatsa
 import { FaXTwitter } from "react-icons/fa6"
 import { motion } from "framer-motion";
 
+
 // Customize these details here
 const CONTACT_INFO = {
     email: "jannatul.ferdaues.soha@gmail.com",
@@ -260,9 +261,11 @@ ${message}
                     </div>
 
                     {/* Social Links */}
+
                     <div>
                         <h4 className="text-sm font-bold font-mono text-neutral-400 mb-4 tracking-[0.2em] uppercase">Socials . . .</h4>
                         <div className="flex gap-3.5 flex-wrap">
+
                             {CONTACT_INFO.socials.map((social) => (
                                 <a
                                     key={social.name}
@@ -270,7 +273,7 @@ ${message}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={social.name}
-                                    className="w-11 h-11 rounded-full border border-neutral-800 hover:border-neutral-500 bg-neutral-900/30 flex items-center justify-center text-neutral-400 hover:text-white transition-all duration-300"
+                                    className="w-11 h-11 rounded-full border border-neutral-800 hover:border-neutral-500 bg-neutral-900/30 flex items-center justify-center text-neutral-400 hover:text-white transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
                                 >
                                     <social.icon size={18} />
                                 </a>

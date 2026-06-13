@@ -14,9 +14,57 @@ import MagicRings from './../../components/MagicRings';
 import ZoomInReavelComponents from '@/components/featurewise/ZoomInReavelComponents'
 import ServicesMarquee from '@/components/featurewise/ServicesMarquee'
 import ContactsPage from '@/components/featurewise/ContactsPage'
+import DotGrid from "../../components/DotGrid"
+import Plasma from "../../components/Plasma";
+import Particles from "../../components/Particles"
 const page = () => {
   return (
-    <div className="min-h-screen bg-[#090E19] text-white">
+    <div className="min-h-screen bg-[#090E19] text-white relative ">
+
+      <div className="absolute inset-0 z-0 opacity-85 saturate-150 contrast-125 mix-blend-screen ">
+        {/* <DarkVeil
+            hueShift={185}
+            noiseIntensity={0.02}
+            scanlineIntensity={0.0}
+            speed={0.5}
+            scanlineFrequency={7}
+            warpAmount={0.16}
+          /> */}
+        {/* <Plasma
+            color="#B497CF"
+            speed={.3}
+            direction="forward"
+            scale={1}
+            opacity={1}
+            mouseInteractive={true}
+          /> */}
+        {/* <DotGrid
+            dotSize={5}
+            gap={50}
+            baseColor="#2F293A"
+            activeColor="#5227FF"
+            proximity={120}
+            shockRadius={250}
+            shockStrength={5}
+            resistance={750}
+            returnDuration={1.5}
+          /> */}
+
+        <Particles
+          particleColors={["#d50505"]}
+          particleCount={900}
+          particleSpread={5}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover
+          alphaParticles={false}
+          disableRotation={false}
+          pixelRatio={1}
+        />
+
+
+      </div>
+
       <section
         className="   "
       >
@@ -30,16 +78,7 @@ const page = () => {
         className="relative overflow-hidden mt-16"
       >
         {/* Background */}
-        <div className="absolute inset-0 z-0 opacity-85 saturate-150 contrast-125 mix-blend-screen">
-          <DarkVeil
-            hueShift={185}
-            noiseIntensity={0.02}
-            scanlineIntensity={0.0}
-            speed={0.5}
-            scanlineFrequency={7}
-            warpAmount={0.16}
-          />
-        </div>
+
 
         {/* Content */}
         <div className="relative z-10">

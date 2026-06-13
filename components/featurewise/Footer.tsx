@@ -47,7 +47,7 @@ export default function Footer() {
               href="https://github.com/jannatul-fredaues"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition"
+              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <FaGithubSquare size={28} />
             </Link>
@@ -56,7 +56,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/jannatul-ferdaues/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition"
+              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <BsLinkedin size={28} />
             </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
               href="https://www.kaggle.com/jannatulferdaues"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition"
+              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <FaKaggle size={28} />
             </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
               href="https://huggingface.co/jannatul-ferdaues"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition"
+              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <SiHuggingface size={28} />
             </Link>
@@ -92,14 +92,14 @@ export default function Footer() {
               href="https://www.hackerrank.com/profile/jannatul_ferdau1"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition"
+              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <FaHackerrank size={28} />
             </Link>
 
             <Link
               href="mailto: jannatul.ferdaues.soha@gmail.com"
-              className="text-white hover:text-gray-400 transition"
+              className="text-white hover:text-gray-400 transition transform hover:-translate-y-2 hover:scale-115 transition-all duration-700"
             >
               <MdEmail size={28} />
             </Link>

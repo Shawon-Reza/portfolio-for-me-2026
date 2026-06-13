@@ -14,11 +14,46 @@ const CountUp = dynamic(() => import('./../../CountUp'), {
 export default function HeroPage() {
     return (
         <section className="relative isolate overflow-hidden  text-white">
-            <div className="pointer-events-none absolute inset-0">
+            {/* <div className="pointer-events-none absolute inset-0">
                 <div className="absolute left-[-8%] top-[-10%] h-72 w-72 rounded-full bg-white/10 blur-3xl sm:h-96 sm:w-96" />
                 <div className="absolute right-[-10%] top-[18%] h-96 w-96 rounded-full bg-white/12 blur-3xl sm:h-[32rem] sm:w-[32rem]" />
                 <div className="absolute bottom-[-15%] left-[18%] h-80 w-80 rounded-full bg-white/10 blur-3xl sm:h-[38rem] sm:w-[38rem]" />
                 <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
+            </div> */}
+            <div className="absolute inset-0 -z-10">
+                <div className="
+      absolute top-[-20%] left-[20%]
+      h-[500px] w-[500px]
+      rounded-full
+      bg-blue-600/20
+      blur-[120px]
+    " />
+
+                <div className="
+      absolute top-[30%] right-[-10%]
+      h-[500px] w-[500px]
+      rounded-full
+      bg-purple-600/20
+      blur-[140px]
+    " />
+
+                <div className="
+      absolute bottom-[-20%] left-[10%]
+      h-[400px] w-[400px]
+      rounded-full
+      bg-cyan-500/10
+      blur-[120px]
+    " />
+                <div
+                    className="
+      absolute bottom-0 left-0 w-full h-48
+      bg-gradient-to-t 
+      from-[#050816]
+      via-[#050816]/80
+      to-transparent
+      pointer-events-none
+    "
+                />
             </div>
 
             <div className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col items-center justify-center px-4 py-16 sm:px-6 lg:px-8">

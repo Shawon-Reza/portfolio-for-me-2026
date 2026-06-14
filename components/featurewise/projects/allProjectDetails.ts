@@ -25,7 +25,7 @@ export const allProjectDetails = [
         description: "Business Portfolio website that ranks #1 on Google Search.",
 
         fullDescription: "<p>Vopromos is a professional business portfolio platform where I worked as Full Stack Developer. I built the complete responsive frontend using React.js and Tailwind CSS, and integrated it with the Node.js backend.</p><br><p>The website delivers a high-performance, modern UI and currently ranks #1 on Google for relevant search terms.</p><br><p>Live: <strong>vopromos.com</strong></p>",
-        src: "https://picsum.photos/id/106/800/600", // Replace with actual screenshot
+        src: "https://res.cloudinary.com/dbmdhxmtx/image/upload/v1781429445/vopromos_x0w2xm.png", // Replace with actual screenshot
         bgColor: "#e3dadd",
         textColor: "#111827",
         liveLink: "https://vopromos.com",
@@ -40,7 +40,7 @@ export const allProjectDetails = [
         description: "AI-powered Clinic Management System with real-time messaging and smart features.",
 
         fullDescription: "<p>Kyro is a complete AI-powered clinic management system where I led the entire frontend development. The platform helps clinics manage patients, appointments, and operations efficiently.</p><br><p>Key features include real-time messaging and notifications using WebSocket, AI Assistant, Chatty AI, and Assessment Generator.</p><br><p>Built with a strong focus on performance, clean UI/UX, and seamless user experience for both doctors and patients.</p><br><p>Live: <strong>getkyroai.com</strong></p>",
-        src: "https://picsum.photos/id/1015/800/600", // Replace with actual screenshot when available
+        src: "https://res.cloudinary.com/dbmdhxmtx/image/upload/v1781429444/kyro_wbsnyl.png", // Replace with actual screenshot when available
         bgColor: "#e3dadd",
         textColor: "#111827",
         liveLink: "https://getkyroai.com",
@@ -77,7 +77,7 @@ export const allProjectDetails = [
         description: "AI-powered Skincare Platform with personalized recommendations and real-time chat.",
 
         fullDescription: "<p>YourSelf Beauty is an intelligent AI-powered skincare platform I developed. It provides personalized skincare recommendations, skin analysis, tracking, favorites, reviews, and an AI skin quiz.</p><br><p>Features real-time chat and calling using WebSocket for enhanced user engagement.</p><br><p>Built with focus on smooth animations, responsive design, and delightful user experience.</p><br><p>Live: <strong>Yourself Beauty</strong></p>",
-        src: "https://picsum.photos/id/201/800/600", // Replace with actual screenshot
+        src: "https://res.cloudinary.com/dbmdhxmtx/image/upload/v1781429440/beauty_irn7xy.png", // Replace with actual screenshot
         bgColor: "#e3dadd",
         textColor: "#111827",
         liveLink: "https://yourselfbeauty.com", // Update with actual link if available

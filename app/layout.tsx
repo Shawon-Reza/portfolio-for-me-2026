@@ -1,8 +1,11 @@
+
+
 import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Shawon Reza - Jr. Frontend Developer",
@@ -25,9 +28,12 @@ export default function RootLayout({
 
         className="min-h-full flex flex-col">
         <ScrollProgress />
+        <Toaster />
         {/* {children} */}
         <CustomCursor />
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <SmoothScrollProvider>
+          {children}          
+          </SmoothScrollProvider>
       </body>
     </html>
   );

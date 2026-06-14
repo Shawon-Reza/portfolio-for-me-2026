@@ -141,7 +141,7 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
 
             <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/6 bg-white/[0.04]">
               <img
-                src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
+                src="https://res.cloudinary.com/dbmdhxmtx/image/upload/v1781434454/Picsart_26-02-28_11-01-09-529_ekfb3r.jpg"
                 alt="FAQ visual"
                 className="h-64 w-full object-cover object-center grayscale sm:h-80 lg:h-[24rem]"
                 loading="lazy"
@@ -150,9 +150,12 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
 
             <div className="mt-4 flex flex-wrap gap-3">
               {[
-                "Deep Learning",
-                "Computer Vision",
-                "NLP & LLMs",
+                "React.js",
+                "Next.js",
+                "TypeScript",
+                "Node.js",
+                "Prisma ORM",
+                "PostgreSQL",
               ].map((tag) => (
                 <span
                   key={tag}

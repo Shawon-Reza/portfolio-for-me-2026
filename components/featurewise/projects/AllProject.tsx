@@ -60,11 +60,12 @@ const StickyCard_001 = ({
 
                 {/* Left Side: Modern Image Frame */}
                 <div className="w-full lg:w-1/2 p-4 lg:p-6 h-[250px] sm:h-[300px] lg:h-full relative z-10">
-                    <div className="w-full h-full relative rounded-[24px] lg:rounded-[32px] overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-[#0F1624] shadow-inner flex items-center justify-center p-4 group-hover:border-white/20 transition-colors duration-500">
+
+                    <div className="w-full h-full relative rounded-[24px] lg:rounded-[32px] overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-[#0F1624] shadow-inner flex items-center justify-center  group-hover:border-white/20 transition-colors duration-500">
                         <img
                             src={src}
                             alt={title}
-                            className="w-full h-full object-contain filter drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                            className="w-full h-full object-cover rounded-2xl filter drop-shadow-2xl transform group-hover:scale-102 transition-transform duration-700 ease-out shadow-2xl"
                         />
                     </div>
                 </div>

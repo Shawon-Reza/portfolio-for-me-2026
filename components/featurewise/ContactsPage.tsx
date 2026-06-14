@@ -5,38 +5,39 @@ import { Mail, MapPin, SendHorizontal, Send, Globe } from "lucide-react"
 import { FaFacebook, FaGithub, FaLinkedin, FaTelegram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { motion } from "framer-motion";
+import { toast } from "sonner"
 
 
 // Customize these details here
 const CONTACT_INFO = {
-    email: "jannatul.ferdaues.soha@gmail.com",
-    phone: "+880 1601 315415",
+    email: "shawon.reza.dev@gmail.com",
+    phone: "01822531281",
     location: "Dhaka, Bangladesh",
     socials: [
         {
             name: "GitHub",
-            href: "https://github.com/jannatul-ferdaues",
+            href: "https://github.com/Shawon-Reza",
             icon: FaGithub
         },
         {
             name: "LinkedIn",
-            href: "https://linkedin.com/in/jannatul-ferdaues",
+            href: "https://www.linkedin.com/in/shawon-reza/",
             icon: FaLinkedin
         },
         {
+            name: "Email",
+            href: "mailto:shawon.reza.dev@gmail.com",
+            icon: Mail
+        },
+        {
             name: "Facebook",
-            href: "https://web.facebook.com/sr.rahman.soha",
+            href: "https://web.facebook.com/shawonreza.dev",
             icon: FaFacebook,
         },
         {
             name: "WhatsApp",
-            href: "https://wa.me/8801601315415",
+            href: "https://wa.me/8801822531281",
             icon: FaWhatsapp,
-        },
-        {
-            name: "Email",
-            href: "mailto:jannatul.ferdaues.soha@gmail.com",
-            icon: Mail
         },
     ]
 }
@@ -55,7 +56,8 @@ export default function ContactsPage() {
         console.log("Form Data Submitted:", { name, email, subject, message })
         setStatus("sending")
 
-        const WEB3FORMS_KEY = "cfc5d363-63bd-4d49-ad0f-02969ab01f4f"
+        // const WEB3FORMS_KEY = "cfc5d363-63bd-4d49-ad0f-02969ab01f4f"
+        const WEB3FORMS_KEY = "c58f6a2d-0e6f-4872-8b44-909ce6c3622a"
         const emailBody = `
 Someone want to connect with you from your portfolio contact form :
 
@@ -84,6 +86,9 @@ ${message}
 
             if (response.ok && json?.success) {
                 setStatus("success")
+                alert("Your message has been sent successfully!")
+                toast.success("Your message has been sent successfully!")
+
                 setName("")
                 setEmail("")
                 setMessage("")
@@ -120,7 +125,7 @@ ${message}
                     textShadow: "0 0 12px rgba(255,255,255,0.7), 0 0 25px rgba(255,255,255,0.3)"
                 }}
             >
-                Let's Connect
+                Lets Connect
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">

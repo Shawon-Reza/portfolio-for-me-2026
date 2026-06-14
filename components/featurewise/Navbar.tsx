@@ -11,7 +11,7 @@ const NAV_ITEMS = [
 
     { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
-    { label: "Testimonials", href: "#testimonials" },
+    // { label: "Testimonials", href: "#testimonials" },
     { label: "Certificates", href: "#certificates" },
     { label: "Contact", href: "#contact" },
 ]
@@ -70,7 +70,7 @@ export default function Navbar() {
                                 <Image
                                     src="/logo.png"
                                     alt="Logo"
-                                    width={100}
+                                    width={150}
                                     height={100} />
                             </div>
                             <span

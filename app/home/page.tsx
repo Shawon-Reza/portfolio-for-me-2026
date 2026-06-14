@@ -15,6 +15,7 @@ import DotGrid from "../../components/DotGrid"
 import Plasma from "../../components/Plasma";
 import Particles from "../../components/Particles"
 import ProjectSection from '@/components/featurewise/projects/ProjectSection'
+import { Skiper30 } from '@/components/featurewise/Skiper30'
 const page = () => {
   return (
     <div className="min-h-scree bg-[#090E19] text-white relative ">
@@ -101,18 +102,14 @@ const page = () => {
         <ProjectSection />
       </section>
 
-      <ZoomInReavelComponents>
+      {/* <ZoomInReavelComponents>
         <section
           id="certificates"
         >
           <ProjectsCertificatesPage />
 
         </section>
-      </ZoomInReavelComponents>
-
-
-
-
+      </ZoomInReavelComponents> */}
 
 
 
@@ -125,7 +122,7 @@ const page = () => {
         </section>
       </RevealAnimation>
 
-
+      <Skiper30 />
 
 
       <section

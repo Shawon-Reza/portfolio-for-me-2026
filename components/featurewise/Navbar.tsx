@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, Sparkles } from "lucide-react"
 import Image from "next/image"
+import { MusicToggleButton } from "./MusicToggleButton "
 const resume = "/Resume.pdf"
 
 
@@ -76,6 +77,7 @@ export default function Navbar() {
                             <span
                                 className="text-xl font-bold tracking-tight">Shawon Reza</span>
                         </a>
+                         <MusicToggleButton />
                     </div>
 
 
@@ -115,6 +117,8 @@ export default function Navbar() {
 
                             Get Resume
                         </a>
+
+                           
 
                         {/* Mobile menu button */}
                         <button
@@ -182,6 +186,7 @@ export default function Navbar() {
                             >
                                 Get Resume
                             </a>
+
                         </nav>
                     </aside>
                 </div>

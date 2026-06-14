@@ -8,9 +8,11 @@ const resume = "/Resume.pdf"
 
 
 const NAV_ITEMS = [
-    // { label: "Services", href: "#services" },
-    { label: "Certificates", href: "#certificates" },
+
+    { label: "About", href: "#about" },
     { label: "Projects", href: "#projects" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Certificates", href: "#certificates" },
     { label: "Contact", href: "#contact" },
 ]
 
@@ -135,7 +137,7 @@ export default function Navbar() {
                         aria-hidden
                     />
 
-                    <aside className="absolute right-0 top-0 h-full w-4/5 max-w-xs bg-neutral-900 text-white shadow-lg p-6">
+                    <aside className="absolute right-0 top-0 h-full w-4/5 max-w-xs  text-white shadow-lg p-6">
                         <div className="flex items-center justify-between mb-6">
                             <div className="flex items-center gap-3">
                                 <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
@@ -152,7 +154,7 @@ export default function Navbar() {
                             </button>
                         </div>
 
-                        <nav className="flex flex-col gap-2 bg-black/90 rounded-xl p-2">
+                        <nav className="flex flex-col gap-2 bg-[#121927] rounded-xl p-2">
                             {NAV_ITEMS.map((item) => {
                                 const isActive = activeSection === item.href.replace("#use" /* fallback */, "") ||
                                     activeSection === item.href.replace("#", "") ||

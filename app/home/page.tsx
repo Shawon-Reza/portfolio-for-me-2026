@@ -1,11 +1,8 @@
 import AboutMe from '@/components/featurewise/AboutMe'
 import HeroPage from '@/components/featurewise/hero-page/HeroPage'
 import Navbar from '@/components/featurewise/Navbar'
-import RecentWork from '@/components/featurewise/RecentWork'
 import ProjectsCertificatesPage from '@/components/featurewise/projectsCertificatesSection/ProjectsCertificatesPage'
-import SkillMarquee from '@/components/featurewise/SkillMarquee'
-import Services from '@/components/featurewise/Services'
-import Reviews from '@/components/featurewise/client-review/Reviews'
+
 import FAQ from '@/components/featurewise/faq/FAQ'
 import Footer from '@/components/featurewise/Footer'
 import DarkVeil from '@/components/ui/DynamicDarkVeil'
@@ -20,7 +17,7 @@ import Particles from "../../components/Particles"
 import ProjectSection from '@/components/featurewise/projects/ProjectSection'
 const page = () => {
   return (
-    <div className="min-h-screen bg-[#090E19] text-white relative ">
+    <div className="min-h-scree bg-[#090E19] text-white relative ">
 
       <div className="absolute inset-0 z-0 opacity-85 saturate-150 contrast-125 mix-blend-screen ">
         {/* <DarkVeil
@@ -96,12 +93,7 @@ const page = () => {
         </section>
       </RevealAnimation>
 
-      <section
-        id=''
-        className='bg-[#0F1624]'
-      >
-        <ProjectSection />
-      </section>
+
 
       <ZoomInReavelComponents>
         <section
@@ -114,29 +106,15 @@ const page = () => {
 
 
 
-
-
       <section
-        id="work"
+        id=''
+        className=''
       >
-        <RecentWork />
+        <ProjectSection />
       </section>
 
 
 
-      <section
-        id="services"
-      >
-        <Services />
-      </section>
-
-
-
-      <section
-        id="testimonials"
-      >
-        <Reviews />
-      </section>
 
 
       <RevealAnimation>

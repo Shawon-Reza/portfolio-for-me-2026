@@ -228,8 +228,8 @@ const FAQ = forwardRef<HTMLDivElement, FAQProps>(function FAQ(
                     <div
                       id={`faq-answer-${displayIndex}`}
                       className={cn(
-                        "grid overflow-hidden px-5 transition-all duration-300 ease-out sm:px-6",
-                        isOpen ? "grid-rows-[1fr] pb-5 opacity-100" : "grid-rows-[0fr] pb-0 opacity-0"
+                        "overflow-hidden px-5 sm:px-6 transition-all duration-300 ease-out",
+                        isOpen ? "max-h-96 opacity-100 pb-5" : "max-h-0 opacity-0 pb-0"
                       )}
                     >
                       <div className="min-h-0 overflow-hidden">

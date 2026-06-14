@@ -1,7 +1,7 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 import React from "react"
-import soha from "../../assets/soha.png"
+import soha from "../../assets/soha.jpg"
 
 type TimelineItem = {
   role: string
@@ -29,11 +29,11 @@ const defaultTimeline: TimelineItem[] = [
     company: "Green University of Bangladesh",
     date: "Sep 2020 – Oct 2025"
   },
-  {
-    role: "Frontend Lead / Full Stack Developer",
-    company: "Multiple Client & Personal Projects",
-    date: "2023 – Present"
-  },
+  // {
+  //   role: "Frontend Lead / Full Stack Developer",
+  //   company: "Multiple Client & Personal Projects",
+  //   date: "2023 – Present"
+  // },
 ]
 
 export default function AboutMe({
@@ -90,16 +90,18 @@ export default function AboutMe({
           </div>
         </div>
         {/* ========================================================= */}
-        <div className="order-first lg:order-last">
-          <div className="relative w-full overflow-hidden rounded-md border border-white/6 bg-white/2 lg:ml-6 flex items-center justify-center">
+        <div className="order-first lg:order-last ">
+          <div className="relative w-full overflow-hidden rounded-md border border-white/6 bg-white/2 lg:ml-6 flex items-center justify-center ">
             <Image
               src={imageSrc}
               alt={imageAlt}
               width={800}
               height={600}
-              className="h-full w-full object-cover sm:h-72 md:h-80 lg:h-full lg:max-h-[520px] "
+              className="h-full w-full object-cover  "
               loading="lazy"
             />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/10" />
             <div className="absolute left-4 top-4 rounded-full bg-black/50 px-4 py-2 text-sm font-medium text-white backdrop-blur">
               About Me
             </div>

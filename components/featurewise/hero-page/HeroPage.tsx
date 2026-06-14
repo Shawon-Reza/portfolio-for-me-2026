@@ -62,8 +62,8 @@ export default function HeroPage() {
                     </h1>
 
                     <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
-                        Full Stack Developer with 1.5+ years building responsive, scalable web applications using React, Next.js, TypeScript & Tailwind CSS. 
-                        Specialized in real-time features, clean UI/UX, and delivering exceptional user experiences — 
+                        Jr. Full Stack Developer with 1.5+ years building end-to-end, responsive, and scalable web applications using React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, Prisma & PostgreSQL.
+                        Specialized in real-time features with WebSocket, clean architecture, and delivering exceptional user experiences —
                         <CountUp
                             from={0}
                             to={10}
@@ -75,7 +75,7 @@ export default function HeroPage() {
                             onStart={() => { }}
                             onEnd={() => { }}
                         />
-                        + client projects, 
+                        + client projects,
                         <CountUp
                             from={0}
                             to={100}
@@ -87,7 +87,7 @@ export default function HeroPage() {
                             onStart={() => { }}
                             onEnd={() => { }}
                         />
-                        % on-time delivery, and consistent 
+                        % on-time delivery, and consistent
                         <CountUp
                             from={0}
                             to={5}

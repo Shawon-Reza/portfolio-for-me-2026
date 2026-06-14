@@ -86,13 +86,7 @@ const page = () => {
         </div>
       </section>
 
-      <RevealAnimation>
-        <section
-          id="about"
-        >
-          <AboutMe />
-        </section>
-      </RevealAnimation>
+      
 
 
       <section
@@ -101,6 +95,15 @@ const page = () => {
       >
         <ProjectSection />
       </section>
+
+
+      <RevealAnimation>
+        <section
+          id="about"
+        >
+          <AboutMe />
+        </section>
+      </RevealAnimation>
 
       {/* <ZoomInReavelComponents>
         <section
@@ -111,7 +114,7 @@ const page = () => {
         </section>
       </ZoomInReavelComponents> */}
 
-
+<Skiper30 />
 
 
       <RevealAnimation>
@@ -122,7 +125,7 @@ const page = () => {
         </section>
       </RevealAnimation>
 
-      <Skiper30 />
+      
 
 
       <section

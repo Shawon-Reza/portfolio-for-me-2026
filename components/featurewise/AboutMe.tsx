@@ -39,7 +39,7 @@ const defaultTimeline: TimelineItem[] = [
 export default function AboutMe({
   title = "Meet Shawon",
   description =
-  "I'm Shawon Reza, a Jr. Frontend Developer with 1.5+ years of experience building responsive, high-performance web applications using React, Next.js, TypeScript, and Tailwind CSS. I specialize in real-time features with WebSocket, clean UI/UX, and delivering exceptional user experiences for multiple client projects.",
+  "I'm Shawon Reza, a Jr. Full Stack Developer with 1.5+ years of experience building end-to-end web applications using React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, Prisma, and PostgreSQL. I specialize in real-time features with WebSocket, clean UI/UX, and delivering high-quality solutions for multiple client projects.",
   tags = [
     "React.js",
     "Next.js",

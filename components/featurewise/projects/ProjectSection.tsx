@@ -17,8 +17,8 @@ export default function ProjectSection() {
                     </span>
                 </h1>
                 <p className="text-[0.94rem] leading-[1.7] text-white/45">
-                    High-performance web applications with React, Next.js, TypeScript &amp; Tailwind CSS.
-                    Focused on real-time features, clean UI/UX, and exceptional user experiences.
+                    End-to-end web applications with React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, Prisma &amp; PostgreSQL.
+                    Specialized in real-time features with WebSocket, clean architecture, and exceptional user experiences.
                 </p>
             </div>
             <div className='max-w-7xl mx-auto px-4 lg:px-10 '>

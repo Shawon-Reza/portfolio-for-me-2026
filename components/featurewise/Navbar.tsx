@@ -4,16 +4,17 @@ import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, Sparkles } from "lucide-react"
 import Image from "next/image"
-import { MusicToggleButton } from "./MusicToggleButton "
+
 const resume = "/Resume.pdf"
 
 
 const NAV_ITEMS = [
 
-    { label: "About", href: "#about" },
+    
     { label: "Projects", href: "#projects" },
+    { label: "About", href: "#about" },
     // { label: "Testimonials", href: "#testimonials" },
-    { label: "Certificates", href: "#certificates" },
+    // { label: "Certificates", href: "#certificates" },
     { label: "Contact", href: "#contact" },
 ]
 
@@ -77,7 +78,7 @@ export default function Navbar() {
                             <span
                                 className="text-xl font-bold tracking-tight">Shawon Reza</span>
                         </a>
-                         <MusicToggleButton />
+                       
                     </div>
 
 

@@ -5,6 +5,22 @@ import AllProject from './AllProject'
 export default function ProjectSection() {
     return (
         <div id='projects' className=''>
+            {/* ── Section header ─────────────────────────────────────────────── */}
+            <div className="mx-auto max-w-[600px] px-4 text-center pt-10">
+                <div className="mb-5 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-[14px] py-1 text-[11px] uppercase tracking-[0.12em] text-white/55">
+                    Projects
+                </div>
+                <h1 className="mb-4 text-[clamp(2.6rem,7vw,4.5rem)] font-light leading-[1.05] tracking-[-0.03em] text-white">
+                    What I&nbsp;
+                    <span className="bg-gradient-to-br from-[#a78bfa] to-[#38bdf8] bg-clip-text text-transparent">
+                        built
+                    </span>
+                </h1>
+                <p className="text-[0.94rem] leading-[1.7] text-white/45">
+                    High-performance web applications with React, Next.js, TypeScript &amp; Tailwind CSS.
+                    Focused on real-time features, clean UI/UX, and exceptional user experiences.
+                </p>
+            </div>
             <div className='max-w-7xl mx-auto px-4 lg:px-10 '>
                 <div className='flex flex-col lg:flex-row '>
                     {/* text section */}

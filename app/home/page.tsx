@@ -94,6 +94,12 @@ const page = () => {
       </RevealAnimation>
 
 
+      <section
+        id=''
+        className=''
+      >
+        <ProjectSection />
+      </section>
 
       <ZoomInReavelComponents>
         <section
@@ -106,12 +112,6 @@ const page = () => {
 
 
 
-      <section
-        id=''
-        className=''
-      >
-        <ProjectSection />
-      </section>
 
 
 

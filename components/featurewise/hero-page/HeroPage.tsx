@@ -62,7 +62,7 @@ export default function HeroPage() {
                     </h1>
 
                     <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 sm:text-base md:text-lg">
-                        Jr. Frontend Developer with 1.5+ years building responsive, scalable web applications using React, Next.js, TypeScript & Tailwind CSS. 
+                        Full Stack Developer with 1.5+ years building responsive, scalable web applications using React, Next.js, TypeScript & Tailwind CSS. 
                         Specialized in real-time features, clean UI/UX, and delivering exceptional user experiences — 
                         <CountUp
                             from={0}

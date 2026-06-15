@@ -10,9 +10,9 @@ const resume = "/Resume.pdf"
 
 const NAV_ITEMS = [
 
-    
-    { label: "Projects", href: "#projects" },
     { label: "About", href: "#about" },
+    { label: "Projects", href: "#projects" },
+    
     // { label: "Testimonials", href: "#testimonials" },
     // { label: "Certificates", href: "#certificates" },
     { label: "Contact", href: "#contact" },

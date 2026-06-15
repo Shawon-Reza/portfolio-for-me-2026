@@ -90,7 +90,7 @@ const page = () => {
 
 
       <section
-        id=''
+        id='projects'
         className=''
       >
         <ProjectSection />

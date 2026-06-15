@@ -21,7 +21,8 @@ export default function ProjectSection() {
                     Specialized in real-time features with WebSocket, clean architecture, and exceptional user experiences.
                 </p>
             </div>
-            <div className='max-w-7xl mx-auto px-4 lg:px-10 '>
+            {/* ==========================  ======================= */}
+            <div className='max-w-7x mx-auto px-4 lg:px-10 '>
                 <div className='flex flex-col lg:flex-row '>
                     {/* text section */}
                     <div className='w-full lg:w-1/3 lg:pr-10 pt-10 lg:pt-40 pb-10 lg:pb-96 '>

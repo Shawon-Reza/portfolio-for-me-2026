@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
 
           <div className="grid gap-6 border-t border-white/8 pt-6 text-sm text-white/80 md:grid-cols-3 md:items-center md:text-base bg-none">
-            <a href="mailto:shawon.reza.dev@gmail.com" className="text-left font-medium text-white transition hover:text-white/80">
+            <a href="mailto:shawon.reza.dev@gmail.com" className="text-center lg:text-left font-medium text-white transition hover:text-white/80">
               shawon.reza.dev@gmail.com
             </a>
 
@@ -76,7 +76,7 @@ export default function Footer() {
               Dhaka, Bangladesh
             </div>
 
-            <div className="text-left md:text-right text-white/70">
+            <div className="text-center lg:text-left md:text-right text-white/70">
               2026 Shawon Reza. All Rights Reserved.
             </div>
           </div>

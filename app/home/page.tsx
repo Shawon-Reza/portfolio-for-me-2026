@@ -120,6 +120,7 @@ const page = () => {
       <RevealAnimation>
         <section
           id="faq"
+          className='mt-36 lg:mt-0'
         >
           <FAQ />
         </section>

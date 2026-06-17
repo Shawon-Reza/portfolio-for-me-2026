@@ -6,6 +6,7 @@ import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 import { Toaster } from "@/components/ui/sonner";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Shawon Reza - Jr. Frontend Developer",
@@ -23,6 +24,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
+
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R3W64TZWRP"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-R3W64TZWRP');
+`}
+        </Script>
+
+      </head>
       <body
         suppressHydrationWarning
 
@@ -32,8 +51,8 @@ export default function RootLayout({
         {/* {children} */}
         <CustomCursor />
         <SmoothScrollProvider>
-          {children}          
-          </SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
       </body>
     </html>
   );
